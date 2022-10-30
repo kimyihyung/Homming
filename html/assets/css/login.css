@@ -1,0 +1,319 @@
+/** @format */
+
+#login__wrap {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 9999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+#login__wrap.open {
+	display: flex;
+}
+#login__wrap_bg {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.2);
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 9999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	backdrop-filter: blur(6px);
+}
+#login__box {
+	width: 380px;
+	background-color: #fff;
+	border-radius: 50px;
+	position: relative;
+}
+
+.login__inner {
+	height: 100%;
+	padding: 70px 35px;
+}
+
+.login__inner h2 {
+	text-align: center;
+	font-size: 28px;
+	padding-bottom: 20px;
+	border-bottom: 3px solid #1c6630;
+	margin-bottom: 30px;
+	font-weight: 600;
+	color: #1c6630;
+}
+
+/* input */
+.login__inner form fieldset > div:nth-child(2) input {
+	margin-bottom: 10px;
+	display: inline-block;
+}
+
+.login__inner form fieldset > div:nth-child(3) input {
+	margin-bottom: 10px;
+	display: inline-block;
+}
+
+.login__inner input::placeholder {
+	font-size: 18px;
+}
+
+.login__inner input {
+	width: 100%;
+	height: 55px;
+	background: #f3f3f3;
+	border: none;
+	padding-top: 6px;
+	outline-color: #1c6630;
+	padding: 10px 10px;
+	font-size: 20px;
+}
+
+/* 로그인 팝업 */
+.login__inner .login__service {
+	display: flex;
+	justify-content: space-between;
+}
+
+.login__inner .login__service a {
+	color: #1c6630;
+}
+
+.login__inner .login__service a:hover {
+	text-decoration: underline;
+}
+
+.login__inner .desc {
+	margin-top: 30px;
+	color: #1c6630;
+	text-align: center;
+	line-height: 1.5;
+	font-size: 14px;
+}
+
+/* 이메일 찾기 팝업 */
+.login__inner button.btn1 a {
+	color: #fff;
+}
+
+.login__inner button.btn3 a {
+	color: #1c6630;
+}
+
+/* 이메일 찾기 완료 팝업 */
+.login__inner .ID_Result {
+	padding: 15px 0 20px;
+}
+
+.login__inner .ID_Result .result {
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 40px;
+	text-align: center;
+}
+
+/* 닫기 버튼 */
+.login__close {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: -25px;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 50%;
+	background-color: #000;
+	background-image: url("data:image/svg+xml,%0A%3Csvg width='20' height='20' viewBox='0 0 37 34' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='2.105' y1='-2.105' x2='42.716' y2='-2.105' transform='matrix(-0.718098 0.695942 -0.718098 -0.695942 33.1406 0.259277)' stroke='white' stroke-width='4.21' stroke-linecap='round'/%3E%3Cline x1='2.105' y1='-2.105' x2='42.716' y2='-2.105' transform='matrix(-0.718098 -0.695942 -0.718098 0.695942 34.6367 33.9404)' stroke='white' stroke-width='4.21' stroke-linecap='round'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+}
+
+@media (max-width: 480px) {
+	.login__inner {
+		padding: 55px 35px 55px;
+	}
+
+	.login__inner h2 {
+		font-size: 24px;
+		margin-bottom: 20px;
+		padding-bottom: 10px;
+		border-bottom: 2px solid #1c6630;
+	}
+
+	#login__box {
+		width: 85%;
+	}
+
+	.login__inner input::placeholder {
+		font-size: 14px;
+	}
+
+	.login__inner input {
+		height: 40px;
+		font-size: 14px;
+	}
+
+	.login__inner .ID_Result .result {
+		font-size: 18px;
+		font-weight: 300;
+		line-height: 35px;
+	}
+
+	.btn1 {
+		padding: 10px;
+		margin-top: 10px;
+		font-size: 18px;
+		font-weight: 600;
+	}
+
+	.btn2 {
+		margin: 20px 3px 0 0;
+		font-size: 10px;
+	}
+
+	.btn3 {
+		padding: 9px;
+		margin-top: 10px;
+		font-size: 17px;
+		font-weight: 600;
+	}
+
+	.login__inner .desc {
+		line-height: 1.5;
+		font-size: 11px;
+	}
+
+	.login__close {
+		width: 40px;
+		height: 40px;
+		top: -21px;
+		background-image: url("data:image/svg+xml,%0A%3Csvg width='16' height='16' viewBox='0 0 37 34' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='2.105' y1='-2.105' x2='42.716' y2='-2.105' transform='matrix(-0.718098 0.695942 -0.718098 -0.695942 33.1406 0.259277)' stroke='white' stroke-width='4.21' stroke-linecap='round'/%3E%3Cline x1='2.105' y1='-2.105' x2='42.716' y2='-2.105' transform='matrix(-0.718098 -0.695942 -0.718098 0.695942 34.6367 33.9404)' stroke='white' stroke-width='4.21' stroke-linecap='round'/%3E%3C/svg%3E");
+	}
+}
+
+/* 로그인 배경 */
+.area {
+	background: #34be82;
+	background: linear-gradient(to left, #007965, #214151);
+	/* background: #4e54c8;
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8); */
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+.circles {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.circles li {
+	position: absolute;
+	display: block;
+	list-style: none;
+	width: 20px;
+	height: 20px;
+	background: rgba(255, 255, 255, 0.2);
+	animation: animate 25s linear infinite;
+	bottom: -150px;
+}
+
+.circles li:nth-child(1) {
+	left: 25%;
+	width: 80px;
+	height: 80px;
+	animation-delay: 0s;
+}
+
+.circles li:nth-child(2) {
+	left: 10%;
+	width: 20px;
+	height: 20px;
+	animation-delay: 2s;
+	animation-duration: 12s;
+}
+
+.circles li:nth-child(3) {
+	left: 70%;
+	width: 20px;
+	height: 20px;
+	animation-delay: 4s;
+}
+
+.circles li:nth-child(4) {
+	left: 40%;
+	width: 60px;
+	height: 60px;
+	animation-delay: 0s;
+	animation-duration: 18s;
+}
+
+.circles li:nth-child(5) {
+	left: 65%;
+	width: 20px;
+	height: 20px;
+	animation-delay: 0s;
+}
+
+.circles li:nth-child(6) {
+	left: 75%;
+	width: 110px;
+	height: 110px;
+	animation-delay: 3s;
+}
+
+.circles li:nth-child(7) {
+	left: 35%;
+	width: 150px;
+	height: 150px;
+	animation-delay: 7s;
+}
+
+.circles li:nth-child(8) {
+	left: 50%;
+	width: 25px;
+	height: 25px;
+	animation-delay: 15s;
+	animation-duration: 45s;
+}
+
+.circles li:nth-child(9) {
+	left: 20%;
+	width: 15px;
+	height: 15px;
+	animation-delay: 2s;
+	animation-duration: 35s;
+}
+
+.circles li:nth-child(10) {
+	left: 85%;
+	width: 150px;
+	height: 150px;
+	animation-delay: 0s;
+	animation-duration: 11s;
+}
+
+@keyframes animate {
+	0% {
+		transform: translateY(0) rotate(0deg);
+		opacity: 1;
+		border-radius: 0;
+	}
+
+	100% {
+		transform: translateY(-1000px) rotate(720deg);
+		opacity: 0;
+		border-radius: 50%;
+	}
+}

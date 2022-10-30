@@ -1,0 +1,329 @@
+/**
+ * /* 슬라이더
+ *
+ * @format
+ */
+
+/* .slider__wrap {
+    display: flex;
+    width: 100%;
+}
+.slider__inner {
+    width: 8455px;
+    height: 540px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.slider__img {
+    width: 1691px;
+    height: 540px;
+    position: relative;
+    overflow: hidden;
+} */
+#sliderType {
+	box-sizing: border-box;
+}
+.swiper-slide {
+	height: 540px !important;
+}
+.swiper-slide:nth-child(1) {
+	height: 540px !important;
+	background: url(../img/slider_bg01.png) no-repeat center / cover;
+	/* position: relative; */
+}
+.swiper-slide:nth-child(2) {
+	background: url(../img/slider_bg02.png) no-repeat center / cover;
+}
+.swiper-slide:nth-child(3) {
+	background: url(../img/slider_bg03.png) no-repeat center / cover;
+}
+.swiper-slide:nth-child(4) {
+	background: url(../img/slider_bg04.png) no-repeat center / cover;
+}
+.swiper-slide .desc {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 100px 20px;
+	box-sizing: border-box;
+	text-align: right;
+}
+.swiper-slide:nth-child(2) .desc p {
+	margin-bottom: 40px;
+}
+.swiper-slide .desc h3 {
+	font-size: 80px;
+	color: #fff;
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+.swiper-slide .desc p {
+	font-size: 28px;
+	color: #fff;
+	font-weight: 300;
+	margin-bottom: 20px;
+}
+.swiper-slide .desc .btn a {
+	border: 3px solid #fff;
+	box-sizing: border-box;
+	border-radius: 5px;
+	color: #fff;
+	padding: 7px 26px;
+	transition: all 0.3s;
+}
+.swiper-slide .desc .btn a:hover {
+	background: #fff;
+	color: #666;
+}
+.swiper-button-prev,
+.swiper-button-next {
+	width: 28px !important;
+	height: 44px !important;
+	background-image: url(../img/slider_arrwo.svg) !important;
+	top: 45% !important;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+	opacity: 0;
+}
+.swiper-button-next {
+	background-position: -29px;
+}
+.swiper-slide .desc3 {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 100px 20px;
+	box-sizing: border-box;
+	text-align: center;
+}
+.swiper-slide .desc3 h3 {
+	font-size: 80px;
+	color: #fff;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+.swiper-slide .desc3 p {
+	font-size: 22px;
+	color: #fff;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+.swiper-slide .desc3 .btn a {
+	border: 3px solid #fff;
+	box-sizing: border-box;
+	border-radius: 5px;
+	color: #fff;
+	padding: 7px 26px;
+	transition: all 0.3s;
+}
+.swiper-slide .desc3 .btn a:hover {
+	background: #fff;
+	color: #666;
+}
+.swiper-slide .desc2 {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 100px 20px;
+	box-sizing: border-box;
+	text-align: left;
+}
+.swiper-slide .desc2 h3 {
+	font-size: 80px;
+	color: #fff;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+.swiper-slide .desc2 p {
+	font-size: 22px;
+	color: #fff;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+.swiper-slide .desc2 .btn a {
+	border: 3px solid #fff;
+	box-sizing: border-box;
+	border-radius: 5px;
+	color: #fff;
+	padding: 7px 26px;
+	transition: all 0.3s;
+}
+.swiper-slide .desc2 .btn a:hover {
+	background: #fff;
+	color: #666;
+}
+
+/* 메인칼럼 */
+.mainColumn__wrap {
+	padding: 100px 0;
+}
+.mainColumn__inner {
+	display: flex;
+	justify-content: space-between;
+}
+.mainColumn__inner .column_left {
+	width: 40%;
+}
+.column_left .col_tit {
+	font-size: 50px;
+	font-weight: 600;
+	line-height: 1.4;
+	margin-bottom: 20px;
+}
+.column_left .col_sub {
+	font-size: 22px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+.column_left .col_desc {
+	line-height: 1.4;
+	font-size: 18px;
+	font-weight: 400;
+	word-break: keep-all;
+	margin-bottom: 35px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 5;
+	-webkit-box-orient: vertical;
+}
+.column_left .col_name {
+	font-weight: 300;
+	font-style: 18px;
+	color: #666;
+}
+.column_left .col_name em {
+	color: #00ad50;
+}
+.mainColumn__inner .column_right {
+	width: 48%;
+}
+.column_right figure {
+	position: relative;
+	overflow: hidden;
+}
+.column_right figure a {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	display: block;
+	transform: translateX(100px) rotate(420deg);
+	opacity: 0;
+	transition: all 0.6s ease 0s;
+}
+.column_right figure:hover a {
+	opacity: 1;
+	transform: translateX(0) rotate(0);
+}
+
+/* 칼럼 카드 */
+.cardColumn__wrap {
+	padding: 100px 0;
+}
+.card .swiper-slide {
+	background-image: none;
+}
+.cardColumn__inner .card_tit {
+	display: flex;
+	align-items: center;
+	margin-bottom: 40px;
+}
+.cardColumn__inner .card_tit h3 {
+	font-size: 34px;
+	font-weight: 600;
+}
+.cardColumn__inner .card_tit a {
+	margin-left: 20px;
+}
+/* .card__sub {
+	display: flex;
+	justify-content: space-between;
+}*/
+/* .card__sub .card {
+	transition: all 0.6s ease-in-out;
+}*/
+.card__sub .card .last__btn {
+	transition: all 0.6s ease-in-out;
+}
+.card__sub .swiper a.last__btn:hover {
+	text-decoration: underline;
+}
+.card .swiper-slide {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.card .swiper-slide img {
+	width: 90%;
+}
+.card__sub .card .card_img {
+	margin-bottom: 10px;
+}
+.card__sub .card .card_desc {
+	word-break: keep-all;
+}
+.card .card_desc h3 {
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	line-height: 1.4;
+}
+.card .card_desc h3 a:hover {
+	text-decoration: underline;
+}
+.card .card_desc p {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.4;
+	margin-bottom: 10px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+.card .card_desc .card_name {
+	font-size: 14px;
+	color: #666;
+}
+.card .card_desc .card_name em {
+	color: #00ad50;
+}
+.card .swiper-slide .plus__img {
+	width: 30%;
+	display: inline-block;
+}
+
+.swiper-slide:nth-child(6) {
+	background: #f5f5f5;
+}
+.card_desc2 .plus__btn {
+	color: #000;
+	font-size: 22px;
+}
+/* 스토어 배너 */
+.banner__wrap {
+	background: url(../img/main_banner.jpg);
+	margin: 100px 0;
+}
+.banner__inner {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 70px 20px;
+	text-align: left;
+}
+.banner__inner .title {
+	font-size: 55px;
+	font-weight: 600;
+	color: #fff;
+	margin-bottom: 30px;
+}
+.banner__inner .banner_btn {
+	font-size: 20px;
+	font-weight: 500;
+	color: #fff;
+}
+.banner__inner .banner_btn:hover {
+	text-decoration: underline;
+}

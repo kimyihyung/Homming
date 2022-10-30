@@ -1,0 +1,785 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: #666;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#board h2 {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+.board__inner {
+  position: relative;
+  padding: 50px 0px;
+}
+
+/* 스토리 카테고리 */
+.story__category {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.story__category ul li {
+  display: inline;
+  padding-left: 30px;
+  box-sizing: border-box;
+}
+
+.story__category ul li a {
+  font-weight: 400;
+}
+
+.story__category ul li.active a {
+  text-decoration: underline;
+}
+
+.board__title {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.board__title p {
+  font-size: 22px;
+  font-weight: 300;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+/* 검색창라인 */
+.board__search {
+  width: 100%;
+  text-align: right;
+  margin-top: 35px;
+  margin-bottom: 20px;
+}
+
+.board__search .right input::placeholder {
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.board__search .right legend {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+.board__search .right #searchKeyword {
+  width: 20%;
+  border: 1px solid #c6c6c6;
+  padding: 10px 15px;
+  font-size: 13px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.board__search .right #searchOption {
+  border: 1px solid #c6c6c6;
+  padding: 10px 15px;
+  font-size: 13px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.board__search .right .searchBtn {
+  border: 1px solid #c6c6c6;
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 13px;
+  box-sizing: border-box;
+  color: #000;
+}
+
+.board__search .right .btn {
+  background: #000;
+  color: #fff;
+  padding: 11px 20px;
+  display: inline-block;
+  border-radius: 5px;
+  font-size: 13px;
+  box-sizing: border-box;
+}
+
+.board__search input::placeholder {
+  font-size: 16px;
+}
+
+/* 게시판 리스트 */
+.board__table table {
+  margin-top: 35px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #ddd;
+}
+
+.board__table td,
+.board__table th {
+  padding: 15px 5px;
+  border-bottom: 1px solid #000;
+}
+
+.board__table th {
+  background-color: #f5f5f5;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.board__table td {
+  font-size: 14px;
+  text-align: center;
+  font-weight: 300;
+}
+
+.board__table tr:hover {
+  background-color: #f5f5f5;
+}
+
+.board__pages {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.board__pages a {
+  font-size: 16px;
+  font-weight: 300;
+  padding: 3px 8px;
+  box-sizing: border-box;
+}
+
+.board__pages a.active {
+  background: #000;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.board__btn {
+  text-align: right;
+}
+
+.board__btn input {
+  width: 20%;
+  border: 1px solid #c6c6c6;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #666;
+}
+
+.board__btn input::placeholder {
+  font-size: 16px;
+}
+
+.board__btn a {
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  margin: 70px 0;
+}
+
+/* 게시판 쓰기 */
+.board__write #categoryOption {
+  padding: 5px;
+}
+
+.board__write .right {
+  margin-bottom: 40px;
+}
+
+.board__write legend {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+.board__write label {
+  width: 100%;
+  display: block;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.board__write input {
+  display: block;
+  border: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  width: 100%;
+  border-radius: 5px;
+  padding: 20px 30px;
+  font-size: 18px;
+  font-weight: 300;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  outline: none;
+}
+
+.board__write textarea {
+  width: 100%;
+  resize: none;
+  border: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 1rem;
+  font-weight: 300;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.board__write .btn {
+  background: #b9b9b9;
+  color: #fff;
+  height: 40px;
+  min-width: 120px;
+  padding: 0 20px;
+  display: inline-block;
+  border-radius: 20px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  margin: 70px 0;
+  float: right;
+  cursor: pointer;
+}
+
+/* modify__btn */
+.modify__btn {
+  text-align: right;
+}
+
+.modify__btn .psss-btn {
+  display: inline-block;
+  width: 20%;
+  border: 1px solid #c6c6c6;
+  padding: 13px 15px;
+  font-size: 13px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.modify__btn .btn {
+  background: #000;
+  color: #fff;
+  padding: 13px 30px;
+  display: inline-block;
+  border-radius: 5px;
+  font-size: 13px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* 게시판뷰 */
+.view_table table {
+  margin-top: 35px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #ddd;
+  color: #000;
+}
+
+.view_table th {
+  font-size: 18px;
+  font-weight: 300;
+  text-align: left;
+  padding: 20px 13px;
+  border-bottom: 1px solid #000;
+}
+
+.view_table .table_left th {
+  font-size: 14px;
+}
+
+.view_table .table_left th .profile_img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.view_table .table_left th em {
+  display: inline;
+  margin-left: 20px;
+}
+
+.view_table .table_left th p {
+  display: inline;
+  margin-left: 20px;
+  font-weight: 300;
+}
+
+.view_table td.height {
+  font-size: 16px;
+  text-align: center;
+  min-height: 400px;
+  display: block;
+  padding: 30px 13px;
+  text-align: left;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+.board_cont {
+  margin-bottom: 50px;
+}
+
+.board_cont tbody .tr1 {
+  border-top: 1px solid #333333;
+}
+
+.board_cont tbody .tr1 {
+  border-bottom: 1px solid #dddddd;
+}
+
+.board_cont tbody .tr2 {
+  border-bottom: 1px solid #333333;
+}
+
+.board_cont th {
+  padding: 13px 0 13px 20px;
+  font-size: 14px;
+  text-align: left;
+  background: #f4f4f2;
+}
+
+.board_cont a {
+  color: #fff;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 300;
+  cursor: pointer;
+  background: #000;
+  border-radius: 10px;
+}
+
+.prev__view a {
+  position: absolute;
+  left: 0;
+  background: url(../../../assets/img/preview.png) no-repeat;
+  width: 50px;
+  padding-bottom: 50px;
+}
+
+.prev__view.none a {
+  pointer-events: none;
+}
+
+.next__view.none a {
+  pointer-events: none;
+}
+
+.next__view a {
+  position: absolute;
+  right: 0;
+  background: url(../../../assets/img/nextview.png) no-repeat;
+  width: 50px;
+  padding-bottom: 50px;
+}
+
+.board_cont a:hover {
+  text-decoration: underline;
+}
+
+.view__btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.board_img {
+  width: 50%;
+}
+
+/* 미디어 쿼리 - 게시판 */
+@media (max-width: 900px) {
+  .board__search .right #searchKeyword {
+    width: 50%;
+  }
+}
+
+@media (max-width: 550px) {
+  .board__table {
+    position: relative;
+  }
+
+  .board__title h3 {
+    font-size: 20px;
+    word-break: keep-all;
+  }
+
+  .board__title p {
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    word-break: keep-all;
+  }
+
+  .board__search .right .btn {
+    position: absolute;
+    bottom: 140px;
+    display: block;
+    right: 0;
+    padding: 6px 14px;
+    font-size: 12px;
+  }
+
+  .board__search .right #searchKeyword,
+  .board__search .right #searchOption {
+    padding: 4px 7px;
+    font-size: 12px;
+  }
+
+  .board__search .right .searchBtn {
+    padding: 5px 8px;
+    font-size: 12px;
+  }
+
+  .board__search .right input::placeholder {
+    font-size: 12px;
+  }
+
+  .board__pages {
+    margin-top: 80px;
+  }
+
+  .board__table td,
+  .board__table th {
+    padding: 10px 5px;
+    font-size: 12px;
+  }
+
+  .board__table a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+
+  .story__category ul li {
+    font-size: 12px;
+  }
+
+  .board__pages ul {
+    font-size: 14px;
+  }
+
+  .story__category {
+    text-align: right;
+  }
+}
+
+/* 미디어쿼리 - 게시판 보기 */
+@media (max-width: 789px) {
+  .board__btn input {
+    width: 35%;
+    padding: 7px 12px;
+    font-size: 14px;
+  }
+
+  .board__btn a {
+    padding: 7px 12px;
+    font-size: 14px;
+  }
+
+  .board__btn input::placeholder {
+    font-size: 14px;
+  }
+
+  .view_table th {
+    font-size: 16px;
+  }
+
+  .view_table td.height {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 450px) {
+  .board__btn input {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .board__btn a {
+    margin: 40px 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .view_table th {
+    word-break: keep-all;
+  }
+
+  .view_table td.height {
+    font-size: 14px;
+    min-height: 350px;
+  }
+
+  .board__btn {
+    display: inline-block;
+  }
+
+  .board__btn input {
+    width: 100%;
+    padding: 7px;
+    font-size: 12px;
+  }
+
+  .board__btn a {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .board__btn input::placeholder {
+    font-size: 12px;
+  }
+
+  .board_cont th {
+    font-size: 12px;
+    padding: 9px 0 9px 18px;
+  }
+
+  .board_cont a {
+    font-size: 12px;
+    padding: 9px 0 9px 18px;
+  }
+}
+
+@media (max-width: 396px) {
+  .board__btn input {
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  .board__btn a {
+    margin: 20px 0;
+  }
+}
+
+/* 미디어 쿼리 - 게시판 쓰기 */
+@media (max-width: 530px) {
+  .board__write .right {
+    margin-bottom: 30px;
+  }
+
+  .board__write input {
+    font-size: 16px;
+    padding: 15px 20px;
+  }
+
+  .board__write textarea {
+    font-size: 14px;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .board__write .btn {
+    padding: 8px 15px;
+    font-size: 14px;
+    margin: 30px 0;
+  }
+
+  .board__write #categoryOption {
+    padding: 5px;
+  }
+}
+
+/* 미디어 쿼리 - 게시판 수정 */
+@media (max-width: 530px) {
+  .modify__btn {
+    display: block;
+  }
+
+  .modify__btn .psss-btn {
+    width: 90%;
+  }
+
+  .board__write:first-child .btn {
+    margin-left: 10px;
+  }
+
+  .modify__btn .psss-btn {
+    margin: 23px 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .modify__btn {
+    display: inline-block;
+  }
+
+  .modify__btn .psss-btn {
+    width: 100%;
+    padding: 8px 15px;
+    font-size: 12px;
+  }
+
+  .modify__btn .psss-btn::placeholder {
+    font-size: 12px;
+  }
+
+  .modify__btn .btn {
+    width: 35%;
+    padding: 10px 25px;
+    font-size: 12px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-top: 0px;
+    margin-left: 10px;
+  }
+}
+
+/* 샐렉트 박스 디자인 */
+.form-select {
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  background: #ffffff;
+  overflow: hidden;
+  border: 1px solid #cbcbcb;
+  border-radius: 3px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), inset 0 0 10px rgba(0, 0, 0, 0.07);
+  -moz-transition: box-shadow 0.2s;
+  -o-transition: box-shadow 0.2s;
+  -webkit-transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s;
+  position: relative;
+}
+
+.form-select:focus,
+.form-select:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.form-select:after {
+  content: "▾";
+  position: absolute;
+  top: 0;
+  right: 12px;
+  z-index: 1;
+  color: #bbbbbb;
+  line-height: 40px;
+  font-size: 14px;
+}
+
+.ie .form-select:after {
+  display: none;
+}
+
+.searchNew {
+  position: relative;
+  background: transparent;
+  background-image: none;
+  display: block;
+  width: 100%;
+  outline: none;
+  color: #888888;
+  cursor: pointer;
+  z-index: 2;
+  border: none;
+  padding: 10px 10px 10px 5px;
+  text-overflow: "";
+  text-indent: 5px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+.searchNew select {
+  height: auto;
+  border: 1px solid #cbcbcb;
+  border-radius: 3px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), inset 0 0 10px rgba(0, 0, 0, 0.07);
+  -moz-transition: box-shadow 0.2s;
+  -o-transition: box-shadow 0.2s;
+  -webkit-transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s;
+}
+
+.searchNew select:hover {
+  border-color: #cccccc;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.searchNew select option[disabled] {
+  color: #eeeeee;
+  text-shadow: none;
+  border: none;
+}
+
+.searchNew:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #888888;
+}
+
+.searchNew::-ms-expand {
+  display: none;
+}
+
+/*==========  Generic styling  ==========*/
+.column-6 {
+  padding: 5px;
+  margin-bottom: 20px;
+  border-color: #ddd;
+  color: #666;
+}
+
+/* file input */
+input[type="file"] {
+  background-color: transparent;
+  opacity: 0.01;
+}
+
+.fileView {
+  border: 1px solid #ddd;
+  width: 100%;
+  padding: 18px 0 16px 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 60px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.inp_placeholder {
+  position: absolute;
+  top: 35%;
+  left: 3%;
+  font-size: 14px;
+  color: #909090;
+}
+
+.file__icon img {
+  position: absolute;
+  top: 30%;
+  right: 19px;
+  width: 25px;
+  height: 25px;
+}
