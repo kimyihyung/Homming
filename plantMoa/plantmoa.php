@@ -75,8 +75,8 @@
                 </div>
 
                 <div class="card__inner search_list_section">
-                    <div class="card">
-                        <a href="../html/plantmoaView.html">
+                    <div class="card" data-category="반려동물 안전한">
+                        <a href="../plantMoa/plantmoaView.php">
                             <div class="card__header">
                                 <figure>
                                     <img src="../html/assets/img/plantmoa01.jpg" alt="몬스테라">
@@ -88,8 +88,8 @@
                             </div>
                         </a>
                     </div>
-                    <div class="card">
-                        <a href="../html/plantmoaView02.html">
+                    <div class="card" data-category="반려동물 안전한">
+                        <a href="../plantMoa/plantmoaView02.php">
                             <div class="card__header">
                                 <figure>
                                     <img src="../html/assets/img/plantmoa02.jpg" alt="싱고니움">
@@ -101,8 +101,8 @@
                             </div>
                         </a>
                     </div>
-                    <div class="card">
-                        <a href="../html/plantmoaView03.html">
+                    <div class="card" data-category="반려동물 안전한">
+                        <a href="../plantMoa/plantmoaView03.php">
                             <div class="card__header">
                                 <figure>
                                     <img src="../html/assets/img/plantmoa03.jpg" alt="시클라멘">
@@ -114,8 +114,8 @@
                             </div>
                         </a>
                     </div>
-                    <div class="card">
-                        <a href="../html/plantmoaView04.html">
+                    <div class="card" data-category="반려동물 안전한">
+                        <a href="../plantMoa/plantmoaView04.php">
                             <div class="card__header">
                                 <figure>
                                     <img src="../html/assets/img/plantmoa04.jpeg" alt="인도 고무나무">
@@ -127,8 +127,8 @@
                             </div>
                         </a>
                     </div>
-                    <div class="card">
-                        <a href="../html/plantmoaView05.html">
+                    <div class="card" data-category="반려동물 안전한">
+                        <a href="../plantMoa/plantmoaView05.php">
                             <div class="card__header">
                                 <figure>
                                     <img src="../html/assets/img/plantmoa05.jpeg" alt="스투키">
@@ -140,8 +140,8 @@
                             </div>
                         </a>
                     </div>
-                    <div class="card">
-                        <a href="../html/plantmoaView06.html">
+                    <div class="card" data-category="반려동물 안전한">
+                        <a href="../plantMoa/plantmoaView06.php">
                             <div class="card__header">
                                 <figure><img src="../html/assets/img/plantmoa06.jpeg" alt="청페페">
                                 </figure>
@@ -152,8 +152,8 @@
                             </div>
                         </a>
                     </div>
-                    <div class="card">
-                        <a href="../html/plantmoaView07.html">
+                    <div class="card" data-category="반려동물 안전한">
+                        <a href="../plantMoa/plantmoaView07.php">
                             <div class="card__header">
                                 <figure>
                                     <img src="../html/assets/img/plantmoa07.jpeg" alt="바질트리">
@@ -165,8 +165,8 @@
                             </div>
                         </a>
                     </div>
-                    <div class="card">
-                        <a href="../html/plantmoaView08.html">
+                    <div class="card" data-category="반려동물 안전한">
+                        <a href="../plantMoa/plantmoaView08.php">
                             <div class="card__header">
                                 <figure>
                                     <img src="../html/assets/img/plantmoa08.jpg" alt="라벤더">
@@ -179,121 +179,147 @@
                         </a>
                     </div>
                     <div class="card" data-category="초보자용">
-                        <div class="card__header2"
-                            style="background-image: url(https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/1666595398149312379556_646855853565767_1253948151984691753_n.jpg);">
-                        </div>
-                        <div class="card__contents">
-                            <img src="../html/assets/img/plantMain_icon.svg" alt="식물모아 식물아이콘">
-                            <h3>필로덴드론 '프린스 오브 오렌지' (선라이트 콩고)</h3>
-                        </div>
+                        <a href="../plantMoa/plantmoaView09.php">
+                            <div class="card__header2"
+                                style="background-image: url(https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/1666595398149312379556_646855853565767_1253948151984691753_n.jpg);">
+                            </div>
+                            <div class="card__contents">
+                                <img src="../html/assets/img/plantMain_icon.svg" alt="식물모아 식물아이콘">
+                                <h3>필로덴드론 '프린스 오브 오렌지' (선라이트 콩고)</h3>
+                            </div>
+                        </a>
                     </div>
                     <div class="card" data-category="초보자용">
-                        <div class="card__header2"
-                            style="background-image: url(https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/1665648189116236565741_580284253380375_3570178949738701144_n.jpg);">
-                        </div>
-                        <div class="card__contents">
-                            <img src="../html/assets/img/plantMain_icon.svg" alt="식물모아 식물아이콘">
-                            <h3>필로덴드론 호세부오노</h3>
-                        </div>
+                        <a href="../plantMoa/plantmoaView10.php">
+                            <div class="card__header2"
+                                style="background-image: url(https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/1665648189116236565741_580284253380375_3570178949738701144_n.jpg);">
+                            </div>
+                            <div class="card__contents">
+                                <img src="../html/assets/img/plantMain_icon.svg" alt="식물모아 식물아이콘">
+                                <h3>필로덴드론 호세부오노</h3>
+                            </div>
+                        </a>
                     </div>
                     <div class="card" data-category="초보자용">
-                        <div class="card__header2"
-                            style="background-image: url(https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16655813305921.jpg);">
-                        </div>
-                        <div class="card__contents">
-                            <img src="../html/assets/img/plantMain_icon.svg" alt="식물모아 식물아이콘">
-                            <h3>스킨답서스 화이트 마블퀸 (마블퀸 스킨답서스)</h3>
-                        </div>
+                        <a href="../plantMoa/plantmoaView11.php">
+                            <div class="card__header2"
+                                style="background-image: url(https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16655813305921.jpg);">
+                            </div>
+                            <div class="card__contents">
+                                <img src="../html/assets/img/plantMain_icon.svg" alt="식물모아 식물아이콘">
+                                <h3>스킨답서스 화이트 마블퀸 (마블퀸 스킨답서스)</h3>
+                            </div>
+                        </a>
                     </div>
                     <div class="card" data-category="반려동물 안전한">
-                        <div class="card__header2"
-                            style="background-image: url(https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16655792924111.jpg);">
-                        </div>
-                        <div class="card__contents">
-                            <img src="../html/assets/img/plantMain_icon.svg" alt="식물모아 식물아이콘">
-                            <h3>하트 호야 (호야 케리)</h3>
-                        </div>
+                        <a href="../plantMoa/plantmoaView12.php">
+                            <div class="card__header2"
+                                style="background-image: url(https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16655792924111.jpg);">
+                            </div>
+                            <div class="card__contents">
+                                <img src="../html/assets/img/plantMain_icon.svg" alt="식물모아 식물아이콘">
+                                <h3>하트 호야 (호야 케리)</h3>
+                            </div>
+                        </a>
                     </div>
                     <div class="card" data-category="반려동물 안전한">
-                        <div class="card__header2"
-                            style="background-image: url(https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16643677823861.jpg);">
-                        </div>
-                        <div class="card__contents">
-                            <img src="../html/assets/img/plantMain_icon.svg" alt="식물모아 식물아이콘">
-                            <h3>바나나 크로톤</h3>
-                        </div>
+                        <a href="../plantMoa/plantmoaView13.php">
+                            <div class="card__header2"
+                                style="background-image: url(https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16643677823861.jpg);">
+                            </div>
+                            <div class="card__contents">
+                                <img src="../html/assets/img/plantMain_icon.svg" alt="식물모아 식물아이콘">
+                                <h3>바나나 크로톤</h3>
+                            </div>
+                        </a>
                     </div>
                     <div class="card" data-category="초보자용">
-                        <div class="card__header2"
-                            style="background-image: url(https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16643664666541.jpg);">
-                        </div>
-                        <div class="card__contents">
-                            <img src="../html/assets/img/plantMain_icon.svg" alt="식물모아 식물아이콘">
-                            <h3>코니오그램 에메이엔시스 '골든 제브라'</h3>
-                        </div>
+                        <a href="../plantMoa/plantmoaView14.php">
+                            <div class="card__header2"
+                                style="background-image: url(https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16643664666541.jpg);">
+                            </div>
+                            <div class="card__contents">
+                                <img src="../html/assets/img/plantMain_icon.svg" alt="식물모아 식물아이콘">
+                                <h3>코니오그램 에메이엔시스 '골든 제브라'</h3>
+                            </div>
+                        </a>
                     </div>
                     <div class="card" data-category="초보자용">
-                        <div class="card__header2"
-                            style="background-image: url(https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16643476966881.jpg);">
-                        </div>
-                        <div class="card__contents">
-                            <img src="../html/assets/img/plantMain_icon.svg" alt="식물모아 식물아이콘">
-                            <h3>베고니아 콘치폴리아</h3>
-                        </div>
+                        <a href="../plantMoa/plantmoaView15.php">
+                            <div class="card__header2"
+                                style="background-image: url(https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16643476966881.jpg);">
+                            </div>
+                            <div class="card__contents">
+                                <img src="../html/assets/img/plantMain_icon.svg" alt="식물모아 식물아이콘">
+                                <h3>베고니아 콘치폴리아</h3>
+                            </div>
+                        </a>
                     </div>
                     <div class="card" data-category="초보자용">
-                        <div class="card__header2"
-                            style="background-image: url(https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16643362462431.jpg);">
-                        </div>
-                        <div class="card__contents">
-                            <img src="../html/assets/img/plantMain_icon.svg" alt="식물모아 식물아이콘">
-                            <h3>싱고니움 밀크컨페티</h3>
-                        </div>
+                        <a href="../plantMoa/plantmoaView16.php">
+                            <div class="card__header2"
+                                style="background-image: url(https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16643362462431.jpg);">
+                            </div>
+                            <div class="card__contents">
+                                <img src="../html/assets/img/plantMain_icon.svg" alt="식물모아 식물아이콘">
+                                <h3>싱고니움 밀크컨페티</h3>
+                            </div>
+                        </a>
                     </div>
                     <div class="card" data-category="초보자용">
-                        <div class="card__header2"
-                            style="background-image: url(https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16642833765131.jpg);">
-                        </div>
-                        <div class="card__contents">
-                            <img src="../html/assets/img/plantMain_icon.svg" alt="식물모아 식물아이콘">
-                            <h3>필로덴드론 옥시카르디움 '브라질'</h3>
-                        </div>
+                        <a href="../plantMoa/plantmoaView17.php">
+                            <div class="card__header2"
+                                style="background-image: url(https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16642833765131.jpg);">
+                            </div>
+                            <div class="card__contents">
+                                <img src="../html/assets/img/plantMain_icon.svg" alt="식물모아 식물아이콘">
+                                <h3>필로덴드론 옥시카르디움 '브라질'</h3>
+                            </div>
+                        </a>
                     </div>
                     <div class="card" data-category="초보자용">
-                        <div class="card__header2"
-                            style="background-image: url(https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16642733650961.jpg);">
-                        </div>
-                        <div class="card__contents">
-                            <img src="../html/assets/img/plantMain_icon.svg" alt="식물모아 식물아이콘">
-                            <h3>형광 스킨답서스(네온 스킨답서스)</h3>
-                        </div>
+                        <a href="../plantMoa/plantmoaView18.php">
+                            <div class="card__header2"
+                                style="background-image: url(https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16642733650961.jpg);">
+                            </div>
+                            <div class="card__contents">
+                                <img src="../html/assets/img/plantMain_icon.svg" alt="식물모아 식물아이콘">
+                                <h3>형광 스킨답서스(네온 스킨답서스)</h3>
+                            </div>
+                        </a>
                     </div>
                     <div class="card" data-category="다육/선인장">
-                        <div class="card__header2"
-                            style="background-image: url(https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16626269782041.jpg);">
-                        </div>
-                        <div class="card__contents">
-                            <img src="../html/assets/img/plantMain_icon.svg" alt="식물모아 식물아이콘">
-                            <h3>금황환 선인장</h3>
-                        </div>
+                        <a href="../plantMoa/plantmoaView19.php">
+                            <div class="card__header2"
+                                style="background-image: url(https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16626269782041.jpg);">
+                            </div>
+                            <div class="card__contents">
+                                <img src="../html/assets/img/plantMain_icon.svg" alt="식물모아 식물아이콘">
+                                <h3>금황환 선인장</h3>
+                            </div>
+                        </a>
                     </div>
                     <div class="card" data-category="다육/선인장">
-                        <div class="card__header2"
-                            style="background-image: url(https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16643447797491.jpg);">
-                        </div>
-                        <div class="card__contents">
-                            <img src="../html/assets/img/plantMain_icon.svg" alt="식물모아 식물아이콘">
-                            <h3>리톱스</h3>
-                        </div>
+                        <a href="../plantMoa/plantmoaView20.php">
+                            <div class="card__header2"
+                                style="background-image: url(https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16643447797491.jpg);">
+                            </div>
+                            <div class="card__contents">
+                                <img src="../html/assets/img/plantMain_icon.svg" alt="식물모아 식물아이콘">
+                                <h3>리톱스</h3>
+                            </div>
+                        </a>
                     </div>
                     <div class="card" data-category="다육/선인장">
-                        <div class="card__header2"
-                            style="background-image: url(https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/1662622984610293155066_454013439520666_6374164835676991354_n.jpg);">
-                        </div>
-                        <div class="card__contents">
-                            <img src="../html/assets/img/plantMain_icon.svg" alt="식물모아 식물아이콘">
-                            <h3>제옥 (플레이오스필로스 넬리)</h3>
-                        </div>
+                        <a href="../plantMoa/plantmoaView21.php">
+                            <div class="card__header2"
+                                style="background-image: url(https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/1662622984610293155066_454013439520666_6374164835676991354_n.jpg);">
+                            </div>
+                            <div class="card__contents">
+                                <img src="../html/assets/img/plantMain_icon.svg" alt="식물모아 식물아이콘">
+                                <h3>제옥 (플레이오스필로스 넬리)</h3>
+                            </div>
+                        </a>
                     </div>
                     <div class="card" data-category="초보자용">
                         <div class="card__header2"
@@ -521,22 +547,26 @@
                         </div>
                     </div>
                     <div class="card" data-category="다육/선인장">
-                        <div class="card__header2"
-                            style="background-image: url(https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16613458461801.webp);">
-                        </div>
-                        <div class="card__contents">
-                            <img src="../html/assets/img/plantMain_icon.svg" alt="식물모아 식물아이콘">
-                            <h3>만세 선인장</h3>
-                        </div>
+                        <a href="../plantMoa/plantmoaView22.php">
+                            <div class="card__header2"
+                                style="background-image: url(https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16613458461801.webp);">
+                            </div>
+                            <div class="card__contents">
+                                <img src="../html/assets/img/plantMain_icon.svg" alt="식물모아 식물아이콘">
+                                <h3>만세 선인장</h3>
+                            </div>
+                        </a>
                     </div>
                     <div class="card" data-category="다육/선인장">
-                        <div class="card__header2"
-                            style="background-image: url(https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16613444523961.webp);">
-                        </div>
-                        <div class="card__contents">
-                            <img src="../html/assets/img/plantMain_icon.svg" alt="식물모아 식물아이콘">
-                            <h3>녹탑</h3>
-                        </div>
+                        <a href="../plantMoa/plantmoaView23.php">
+                            <div class="card__header2"
+                                style="background-image: url(https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16613444523961.webp);">
+                            </div>
+                            <div class="card__contents">
+                                <img src="../html/assets/img/plantMain_icon.svg" alt="식물모아 식물아이콘">
+                                <h3>녹탑</h3>
+                            </div>
+                        </a>
                     </div>
                     <div class="card" data-category="초보자용">
                         <div class="card__header2"
@@ -620,13 +650,15 @@
                         </div>
                     </div>
                     <div class="card" data-category="다육/선인장">
-                        <div class="card__header2"
-                            style="background-image: url(https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16611509631951.webp);">
-                        </div>
-                        <div class="card__contents">
-                            <img src="../html/assets/img/plantMain_icon.svg" alt="식물모아 식물아이콘">
-                            <h3>녹비단</h3>
-                        </div>
+                        <a href="../plantMoa/plantmoaView24.php">
+                            <div class="card__header2"
+                                style="background-image: url(https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16611509631951.webp);">
+                            </div>
+                            <div class="card__contents">
+                                <img src="../html/assets/img/plantMain_icon.svg" alt="식물모아 식물아이콘">
+                                <h3>녹비단</h3>
+                            </div>
+                        </a>
                     </div>
                     <div class="card" data-category="반려동물 안전한">
                         <div class="card__header2"
@@ -665,22 +697,26 @@
                         </div>
                     </div>
                     <div class="card" data-category="다육/선인장">
-                        <div class="card__header2"
-                            style="background-image: url(https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16607334014111.webp);">
-                        </div>
-                        <div class="card__contents">
-                            <img src="../html/assets/img/plantMain_icon.svg" alt="식물모아 식물아이콘">
-                            <h3>귀면각 선인장 (연성각)</h3>
-                        </div>
+                        <a href="../plantMoa/plantmoaView25.php">
+                            <div class="card__header2"
+                                style="background-image: url(https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16607334014111.webp);">
+                            </div>
+                            <div class="card__contents">
+                                <img src="../html/assets/img/plantMain_icon.svg" alt="식물모아 식물아이콘">
+                                <h3>귀면각 선인장 (연성각)</h3>
+                            </div>
+                        </a>
                     </div>
                     <div class="card" data-category="다육/선인장">
-                        <div class="card__header2"
-                            style="background-image: url(https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16607286907181.webp);">
-                        </div>
-                        <div class="card__contents">
-                            <img src="../html/assets/img/plantMain_icon.svg" alt="식물모아 식물아이콘">
-                            <h3>녹영 (콩란)</h3>
-                        </div>
+                        <a href="../plantMoa/plantmoaView26.php">
+                            <div class="card__header2"
+                                style="background-image: url(https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16607286907181.webp);">
+                            </div>
+                            <div class="card__contents">
+                                <img src="../html/assets/img/plantMain_icon.svg" alt="식물모아 식물아이콘">
+                                <h3>녹영 (콩란)</h3>
+                            </div>
+                        </a>
                     </div>
                     <div class="card" data-category="초보자용">
                         <div class="card__header2"
