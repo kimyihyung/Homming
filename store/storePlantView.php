@@ -1,3 +1,7 @@
+<?php
+    include "../connect/session.php";
+	include "../connect/connect.php";
+?>
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -32,7 +36,7 @@
                     <li><a href="storeSupplies.php">원예 용품</a></li>
                 </ul>
             </div>
-            <h3 class="storeView_tit">전체 식물 8</h3>
+            <h3 class="storeView_tit">전체 식물 12</h3>
             <div class="storecardView__inner">
                 <div class="storeCard__top">
                     <div class="store__card">
@@ -76,7 +80,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="storeCard__bom">
+                <div class="storeCard__cen">
                     <div class="store__card">
                         <a href="https://smartstore.naver.com/kokodama/products/6888167731">
                             <figure>
@@ -118,19 +122,52 @@
                         </a>
                     </div>
                 </div>
-            </div>
-            <div class="storeView__pages">
-                <ul>
-                    <li><a href="#">&lt;&lt;</a></li>
-                    <li><a href="#">&lt;</a></li>
-                    <li><a class="active" href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#">&gt;</a></li>
-                    <li><a href="#">&gt;&gt;</a></li>
-                </ul>
+                <div class="storeCard__bom">
+                    <div class="store__card">
+                        <a
+                            href="https://smartstore.naver.com/feelplant/products/4751074403?NaPm=ct%3Dl9wjnf2o%7Cci%3D3e36d726c7c7ca5ec485c0339b77a234aac7bf1c%7Ctr%3Dslsl%7Csn%3D844310%7Chk%3D7bc09e1e8f997ccb3ddf83109ee9aa58a0d21311">
+                            <figure>
+                                <img src="../html/assets/img/store_card_img09.jpg" alt="식물 이미지" />
+                            </figure>
+                            <h3>마오리소포라 독일토분 화이트크림 실내공기정화식물 인테리어식물</h3>
+                            <div class="price">40,000</div>
+                            <div class="sale">19,800</div>
+                        </a>
+                    </div>
+                    <div class="store__card">
+                        <a
+                            href="https://smartstore.naver.com/feelplant/products/4551166249?NaPm=ct%3Dl9wjmv0g%7Cci%3Dab3375acefe825c82a75050bdff1773c483f6913%7Ctr%3Dslsl%7Csn%3D844310%7Chk%3Df42bcb69a6fe458ba0ed2ba9ad970bf730083ad0">
+                            <figure>
+                                <img src="../html/assets/img/store_card_img10.jpg" alt="식물 이미지" />
+                            </figure>
+                            <h3>식용허브식물</h3>
+                            <div class="price">15,000</div>
+                            <div class="sale">2,500</div>
+                        </a>
+                    </div>
+                    <div class="store__card">
+                        <a
+                            href="https://smartstore.naver.com/fiumplant/products/6664701698?NaPm=ct%3Dl9wjm0x4%7Cci%3D9aaf39d543eb48e04fb10d06b7ce451031e582bf%7Ctr%3Dslsl%7Csn%3D317384%7Chk%3Dedeef706cca20b50ad5ccfefcde816a73896215b">
+                            <figure>
+                                <img src="../html/assets/img/store_card_img11.jpg" alt="식물 이미지" />
+                            </figure>
+                            <h3>테라리움 만들기 식물 키트 키우기</h3>
+                            <div class="price">14,900</div>
+                            <div class="sale">12,900</div>
+                        </a>
+                    </div>
+                    <div class="store__card">
+                        <a
+                            href="https://shopping.naver.com/living/homeliving/stores/100456417/products/4568750909?NaPm=ct%3Dl9wjjpl4%7Cci%3D58bf6e1cad010259245f1c3dcc97b0936d49f9c6%7Ctr%3Dslsl%7Csn%3D500134%7Chk%3D623d2c5dc5b24fa855e4bc87880300d14c39cbec">
+                            <figure>
+                                <img src="../html/assets/img/store_card_img12.jpg" alt="식물 이미지" />
+                            </figure>
+                            <h3>수경재배식물 키우기 아레카야자 수경</h3>
+                            <div class="price">4,000</div>
+                            <div class="sale">2,500</div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- //storeCard -->

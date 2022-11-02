@@ -23,8 +23,8 @@
     <!-- header -->
 
     <main id="main">
-        <section id="loginSave">
-            <h2>loginSave 페이지입니다.</h2>
+        <section id="loginSave" class="container">
+            <h2 class="blind">loginSave 페이지입니다.</h2>
             <div class="img">
                 <img src="../html/assets/img/join_banner.svg" alt="로그인배너">
             </div>
@@ -90,6 +90,8 @@ if($result){
 
     </main>
     <!-- main -->
+    <?php include "../include/footer.php" ?>
+    <!-- footer -->
 
     <?php include "../login/login.php" ?>
     <!-- login -->

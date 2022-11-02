@@ -1,5 +1,8 @@
 <!-- @format -->
-
+<?php
+    include "../connect/session.php";
+    include "../connect/connect.php";
+?>
 <!DOCTYPE html>
 <html lang="ko">
 	<head>
@@ -63,74 +66,82 @@
 					<div class="swiper-wrapper">
 						<div class="swiper-slide column">
 							<div class="column__slide">
-								<div class="img">
-									<figure>
-										<img
-											src="../html/assets/img/column02_01.jpg"
-											alt="선인장칼럼"
-										/>
-									</figure>
+								<a href="column07.php">
+									<div class="img">
+										<figure>
+											<img
+												src="../html/assets/img/column02_01.jpg"
+												alt="선인장칼럼"
+											/>
+										</figure>
+										<div class="column__desc2">
+											<h4>
+												당신이 모르는 선인장에 대하여
+											</h4>
+											<p class="copy">CopyWriter <em>플랜트 폭스</em></p>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide column">
+							<div class="column__slide">
+								<a href="column08.php">
+									<div class="img">
+										<figure>
+											<img
+												src="../html/assets/img/column03_01.jpg"
+												alt=""
+											/>
+										</figure>
+									</div>
 									<div class="column__desc2">
 										<h4>
-											<a href="column07.php">당신이 모르는 선인장에 대하여</a>
+											꽃을 위한 칼럼, 벚꽃
 										</h4>
 										<p class="copy">CopyWriter <em>플랜트 폭스</em></p>
 									</div>
-								</div>
+								</a>
 							</div>
 						</div>
 						<div class="swiper-slide column">
 							<div class="column__slide">
-								<div class="img">
-									<figure>
-										<img
-											src="../html/assets/img/column03_01.jpg"
-											alt=""
-										/>
-									</figure>
-								</div>
-								<div class="column__desc2">
-									<h4>
-										<a href="column08.php">꽃을 위한 칼럼, 벚꽃</a>
-									</h4>
-									<p class="copy">CopyWriter <em>플랜트 폭스</em></p>
-								</div>
+								<a href="column09.php">
+									<div class="img">
+										<figure>
+											<img
+												src="../html/assets/img/column04_01.jpg"
+												alt=""
+											/>
+										</figure>
+									</div>
+									<div class="column__desc2">
+										<h4>
+											만약에 식물이 말을 하게 된다면?
+										</h4>
+										<p class="copy">CopyWriter <em>플랜트 폭스</em></p>
+									</div>
+								</a>
 							</div>
 						</div>
 						<div class="swiper-slide column">
 							<div class="column__slide">
-								<div class="img">
-									<figure>
-										<img
-											src="../html/assets/img/column04_01.jpg"
-											alt=""
-										/>
-									</figure>
-								</div>
-								<div class="column__desc2">
-									<h4>
-										<a href="column09.php">만약에 식물이 말을 하게 된다면?</a>
-									</h4>
-									<p class="copy">CopyWriter <em>플랜트 폭스</em></p>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-slide column">
-							<div class="column__slide">
-								<div class="img">
-									<figure>
-										<img
-											src="../html/assets/img/column05_01.jpg"
-											alt=""
-										/>
-									</figure>
-								</div>
-								<div class="column__desc2">
-									<h4>
-										<a href="column10.php">식물을 잘 기르는 방법은?</a>
-									</h4>
-									<p class="copy">CopyWriter <em>플랜트 폭스</em></p>
-								</div>
+								<a href="column10.php">
+									<div class="img">
+										<figure>
+											<img
+												src="../html/assets/img/column05_01.jpg"
+												alt=""
+											/>
+										</figure>
+									</div>
+									<div class="column__desc2">
+										<h4>
+											식물을 잘 기르는 방법은?
+										</h4>
+										<p class="copy">CopyWriter <em>플랜트 폭스</em></p>
+									</div>
+								</a>
 							</div>
 						</div>
 						<div class="swiper-slide column">
@@ -160,114 +171,121 @@
 					<div class="swiper-wrapper">
 						<div class="swiper-slide column">
 							<div class="column__slide">
-								<div class="img">
-									<figure>
-										<img
-											src="../html/assets/img/column01.jpg"
-											alt=""
-										/>
-									</figure>
-								</div>
-								<div class="column__desc2">
-									<h4>
-										<a href="column01.php"
-											>물주기 무엇이 잘못 되었을까?</a
-										>
-									</h4>
-									<p class="copy">CopyWriter <em>김눈누</em></p>
-								</div>
+								<a href="column01.php">
+									<div class="img">
+										<figure>
+											<img
+												src="../html/assets/img/column01.jpg"
+												alt=""
+											/>
+										</figure>
+									</div>
+									<div class="column__desc2">
+										<h4>물주기 무엇이 잘못 되었을까?
+										</h4>
+										<p class="copy">CopyWriter <em>김눈누</em></p>
+									</div>
+								</a>
 							</div>
 						</div>
 						<div class="swiper-slide column">
 							<div class="column__slide">
-								<div class="img">
-									<figure>
-										<img
-											src="../html/assets/img/cardColumn01_01.jpg"
-											alt=""
-										/>
-									</figure>
-								</div>
-								<div class="column__desc2">
-									<h4>
-										<a href="column04.php"
-											>실내에서 식물을 멋지게 키우는 법</a
-										>
-									</h4>
-									<p class="copy">CopyWriter <em>김눈누</em></p>
-								</div>
+								<a href="column04.php">
+									<div class="img">
+										<figure>
+											<img
+												src="../html/assets/img/cardColumn01_01.jpg"
+												alt=""
+											/>
+										</figure>
+									</div>
+									<div class="column__desc2">
+										<h4>
+											실내에서 식물을 멋지게 키우는 법
+										</h4>
+										<p class="copy">CopyWriter <em>김눈누</em></p>
+									</div>
+								</a>
 							</div>
 						</div>
 						<div class="swiper-slide column">
 							<div class="column__slide">
-								<div class="img">
-									<figure>
-										<img
-											src="../html/assets/img/cardColumn02_01.jpg"
-											alt=""
-										/>
-									</figure>
-								</div>
-								<div class="column__desc2">
-									<h4>
-										<a href="column02.php">식물고수, 식물킬러를 만나다</a>
-									</h4>
-									<p class="copy">CopyWriter <em>김눈누</em></p>
-								</div>
+								<a href="column02.php">
+									<div class="img">
+										<figure>
+											<img
+												src="../html/assets/img/cardColumn02_01.jpg"
+												alt=""
+											/>
+										</figure>
+									</div>
+									<div class="column__desc2">
+										<h4>
+											식물고수, 식물킬러를 만나다
+										</h4>
+										<p class="copy">CopyWriter <em>김눈누</em></p>
+									</div>
+								</a>
 							</div>
 						</div>
 						<div class="swiper-slide column">
 							<div class="column__slide">
-								<div class="img">
-									<figure>
-										<img
-											src="../html/assets/img/cardColumn03_01.jpg"
-											alt=""
-										/>
-									</figure>
-								</div>
-								<div class="column__desc2">
-									<h4>
-										<a href="column03.php">실내 식물들을 위한 응급처치법</a>
-									</h4>
-									<p class="copy">CopyWriter <em>김눈누</em></p>
-								</div>
+								<a href="column03.php">
+									<div class="img">
+										<figure>
+											<img
+												src="../html/assets/img/cardColumn03_01.jpg"
+												alt=""
+											/>
+										</figure>
+									</div>
+									<div class="column__desc2">
+										<h4>
+											실내 식물들을 위한 응급처치법
+										</h4>
+										<p class="copy">CopyWriter <em>김눈누</em></p>
+									</div>
+								</a>
 							</div>
 						</div>
 						<div class="swiper-slide column">
 							<div class="column__slide">
-								<div class="img">
-									<figure>
-										<img
-											src="../html/assets/img/cardColumn04_02.jpg"
-											alt=""
-										/>
-									</figure>
-								</div>
-								<div class="column__desc2">
-									<h4>
-										<a href="column05.php">식물이 좋아하는 물 주기 방법</a>
-									</h4>
-									<p class="copy">CopyWriter <em>김눈누</em></p>
-								</div>
+								<a href="column05.php">
+									<div class="img">
+										<figure>
+											<img
+												src="../html/assets/img/cardColumn04_02.jpg"
+												alt=""
+											/>
+										</figure>
+									</div>
+									<div class="column__desc2">
+										<h4>
+											식물이 좋아하는 물 주기 방법
+										</h4>
+										<p class="copy">CopyWriter <em>김눈누</em></p>
+									</div>
+								</a>
 							</div>
 						</div>
 						<div class="swiper-slide column">
 							<div class="column__slide">
-								<div class="img">
-									<figure>
-										<img
-											src="../html/assets/img/cardColumn05_01.jpg"
-											alt=""
-										/>
-									</figure>
-								</div>
-								<div class="column__desc2">
-									<h4>
-										<a href="column06.php">식물이 스트레스 받는 이유</a>
-									</h4>
-									<p class="copy">CopyWriter <em>김눈누</em></p>
-								</div>
+								<a href="column06.php">
+									<div class="img">
+										<figure>
+											<img
+												src="../html/assets/img/cardColumn05_01.jpg"
+												alt=""
+											/>
+										</figure>
+									</div>
+									<div class="column__desc2">
+										<h4>
+											식물이 스트레스 받는 이유
+										</h4>
+										<p class="copy">CopyWriter <em>김눈누</em></p>
+									</div>
+								</a>
 							</div>
 						</div>
 					</div>

@@ -96,14 +96,16 @@
 .storeCard__inner {
   display: flex;
   justify-content: space-between;
-}
-
-.storeCard__inner {
+  flex-wrap: wrap;
   margin-bottom: 100px;
 }
-
 .store__card {
   width: 24%;
+  transition: all 0.3s;
+}
+
+.store__card:hover {
+  scale: 1.05;
 }
 
 .store__card h3 {
@@ -132,7 +134,19 @@
   color: #666;
 }
 
+.storecardView__inner h3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .storeCard__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 90px;
+}
+
+.storeCard__cen {
   display: flex;
   justify-content: space-between;
   margin-bottom: 90px;
@@ -143,35 +157,13 @@
   justify-content: space-between;
 }
 
-/* 스토어 페이징 */
-.storeView__pages {
-  text-align: center;
-  margin: 100px 0;
-}
-
-.storeView__pages ul {
-  display: flex;
-  justify-content: center;
-}
-
-.storeView__pages ul li a {
-  padding: 13px 15px;
-  font-weight: 300;
-}
-
-.storeView__pages ul li a.active {
-  background: #000;
-  color: #fff;
-  border-radius: 50%;
-  padding: 3px 8px;
-}
-
 /* 스토어 배너 */
 .storebanner__wrap {
   background: #f7f0e9;
   padding-top: 55px;
   padding-bottom: 40px;
   margin-bottom: 100px;
+  margin-top: 150px;
 }
 
 .storebanner__inner {
@@ -203,4 +195,32 @@
 
 .storebanner__right {
   width: 48%;
+}
+@media (max-width: 700px) {
+  .storeCard__cate ul li a {
+    font-size: 16px;
+  }
+  .storeCard__cate ul li:nth-child(2) {
+    padding-left: 45px;
+  }
+  .storeCard__cate ul li:nth-child(3) {
+    padding-left: 45px;
+  }
+  .store__tit h3 {
+    font-size: 18px;
+  }
+  .store__card {
+    width: 48%;
+    margin-bottom: 20px;
+  }
+  .store__card h3 {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  .store__card .price {
+    font-size: 12px;
+  }
+  .store__card .sale {
+    font-size: 14px;
+  }
 }

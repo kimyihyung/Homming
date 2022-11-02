@@ -32,8 +32,12 @@
           <p>
             <img
               src="../html/assets/img/column__veiw.svg"
-              alt="조회수 아이콘"
-            />1110
+              alt="목록으로 가기"
+            /><a
+							href="../column/columnMain.php"
+							class="column__go"
+							>목록으로 바로가기</a
+						>
           </p>
         </div>
         <div class="columnView__inner">
@@ -97,7 +101,7 @@
         </div>
         <div class="columnView__end">
           <figure class="columnView__img">
-            <img src="../html/assets/img/column05.jpg" alt="" />
+            <img src="../html/assets/img/column05.jpg" alt="김눈누 프로필" />
           </figure>
           <div class="columnView__content">
             <div class="title1">
@@ -116,11 +120,23 @@
               </p>
             </div>
             <ul class="columnView__keywords">
-              <li class="columnView__keyword">김눈누</li>
-              <li class="columnView__keyword">온도, 습도</li>
-              <li class="columnView__keyword">물주기</li>
+              <li class="columnView__keyword"><a href="https://youtu.be/d9wPldFE6ns" target="_blank">수경 재배 추천</a><img
+									src="../html/assets/img/column__go.svg"
+									alt="유튜브 바로가기"
+								/></li>
+              <li class="columnView__keyword"><a href="http://homming.dothome.co.kr/plantMoa/plantmoaView02.php">싱고니움 추천</a><img
+									src="../html/assets/img/column__go.svg"
+									alt="식물모아 싱고니움"
+								/></li>
+              <li class="columnView__keyword"><a href="https://youtu.be/FwjhYuTGnkg" target="_blank">잘 자라는 식물 추천</a><img
+									src="../html/assets/img/column__go.svg"
+									alt="유튜브 바로가기"
+								/></li>
             </ul>
           </div>
+          <div class="Top__fixed">
+						<div class="Top__btn">Top</div>
+					</div>
         </div>
       </section>
       <!-- //plantmoaView -->
@@ -134,6 +150,7 @@
     <!-- login -->
     
     <script src="../assets/js/login.js"></script>
+    <script src="../assets/js/topBtn.js"></script>
 
   </body>
 </html>

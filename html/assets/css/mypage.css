@@ -1,3 +1,5 @@
+/** @format */
+
 .mypage__menu {
   display: flex;
   margin: 42px 10% 14px 10%;
@@ -356,16 +358,32 @@
   height: 53px;
 }
 
+.inp_placeholder_my {
+  margin: 26px 0 27px 70px;
+  border-radius: 23.5px;
+  border: none;
+  background-color: #e7f2ea;
+  padding: 16px 33px 15px 33px;
+  color: #b7c2dd;
+  position: absolute;
+}
+.hide .input {
+  background-color: transparent;
+  opacity: 0.01;
+  position: relative;
+}
 .put .input {
   margin: 26px 0 27px 0;
   border-radius: 23.5px;
   border: none;
   background-color: #e7f2ea;
   padding: 16px 33px 15px 33px;
+  color: #b7c2dd;
+  /* position: absolute; */
 }
 
 .put .input::placeholder {
-  color: #b7c2dd;
+  color: #9199ae;
   text-align: center;
   align-items: center;
   font-size: 14px;
@@ -390,8 +408,19 @@
   display: none;
 }
 
+.profile_input {
+  margin-right: 90px !important;
+}
+
+.profile_check {
+  background: #4c6d5c;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
 .put .myProfile-Btn {
-  margin-right: 112px;
+  margin-right: 30px;
   margin-left: 25px;
   cursor: pointer;
   background: #f6faf8;

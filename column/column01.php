@@ -34,8 +34,12 @@
           <p>
             <img
               src="../html/assets/img/column__veiw.svg"
-              alt="조회수 아이콘"
-            />1212
+              alt="목록으로 가기"
+            /><a
+							href="../column/columnMain.php"
+							class="column__go"
+							>목록으로 바로가기</a
+						>
           </p>
         </div>
         <div class="columnView__inner">
@@ -108,7 +112,7 @@
         </div>
         <div class="columnView__end">
           <figure class="columnView__img">
-            <img src="../html/assets/img/column05.jpg" alt="" />
+            <img src="../html/assets/img/column05.jpg" alt="김눈누 프로필" />
           </figure>
           <div class="columnView__content">
             <div class="title1">
@@ -127,11 +131,23 @@
               </p>
             </div>
             <ul class="columnView__keywords">
-              <li class="columnView__keyword">식물모아</li>
-              <li class="columnView__keyword">물주기</li>
-              <li class="columnView__keyword">죽이지 마요ㅜㅜ</li>
+              <li class="columnView__keyword"><a href="https://youtu.be/wa0auX1J99Q" target="_blank">초보자 식물키우기 팁</a><img
+									src="../html/assets/img/column__go.svg"
+									alt="유튜브 바로가기"
+								/></li>
+              <li class="columnView__keyword"><a href="http://homming.dothome.co.kr/plantMoa/plantmoaView.php">몬스테라 키우기</a><img
+									src="../html/assets/img/column__go.svg"
+									alt="식물모아 바로가기"
+								/></li>
+              <li class="columnView__keyword"><a href="https://youtu.be/0D5mb6Y-4Ac" target="_blank">식물 영상 팁⭐</a><img
+									src="../html/assets/img/column__go.svg"
+									alt="유튜브 바로가기"
+								/></li>
             </ul>
           </div>
+          <div class="Top__fixed">
+						<div class="Top__btn">Top</div>
+					</div>
         </div>
       </section>
       <!-- //plantmoaView -->
@@ -146,6 +162,7 @@
     <!-- login -->
     
     <script src="../assets/js/login.js"></script>
+    <script src="../assets/js/topBtn.js"></script>
 
     <script></script>
   </body>

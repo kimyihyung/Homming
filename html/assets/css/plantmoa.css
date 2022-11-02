@@ -33,6 +33,10 @@
 
 .card__inner .card {
   width: 250px;
+  transition: all 0.3s;
+}
+.card__inner .card:hover {
+  scale: 1.05;
 }
 
 .card__header figure img {

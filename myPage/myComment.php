@@ -100,66 +100,6 @@
                 </div>
                 <?php }?>
             </div>
-
-
-            <div class="board__pages">
-                <?php
-
-//갯수구하기
-$sql = "SELECT count(myCommentID) FROM myComment WHERE  commentDelete = 0";
-$result = $connect -> query($sql);
-
-$myCommentCount = $result -> fetch_array(MYSQLI_ASSOC);
-$myCommentCount = $myCommentCount['count(myCommentID)'];
-
-//총 페이지 갯수
-$myCommentCount = ceil($myCommentCount/$viewNum);
-
-//현재 페이지를 기준으로 보여주고 싶은 갯수
-$pageCurrent = 5;
-$startPage = $page - $pageCurrent;  
-$endPage = $page + $pageCurrent;
-
-//처음페이지 초기화
-if($startPage < 1) $startPage = 1;
-
-//마지막페이지 초기화
-if($endPage >= $myCommentCount) $endPage = $myCommentCount;
-
-//이전 페이지, 처음 페이지
-if($page != 1){
-    $prevPage = $page - 1;
-    echo "<a href='myComment.php?page=1'>&lt;&lt;</a>";
-    echo "<a href='myComment.php?page={$prevPage}'>&lt;</a>";
-}
-
-//페이지 넘버 표시
-for($i=$startPage; $i <= $endPage; $i++){
-    $active = "";
-    if($i == $page) $active = "active";
-
-    echo "<a class='{$active}' href = 'myComment.php?page={$i}'>{$i}</a>";
-}
-
-//다음 페이지, 마지막 페이지
-if($page != $endPage){
-    $nextPage = $page + 1;
-    echo "<a href='myComment.php?page={$nextPage}'>&gt;</a>";
-    echo "<a href='myComment.php?page={$myCommentCount}'>&gt;&gt;</a>";
-}
-?>
-                <!-- <ul>
-                    <li><a href="#">&lt;&lt;</a></li>
-                    <li><a href="#">&lt;</a></li>
-                    <li class="active"><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#">&gt;</a></li>
-                    <li><a href="#">&gt;&gt;</a></li>
-                </ul> -->
-            </div>
         </section>
         <!-- //plantmoa -->
     </main>

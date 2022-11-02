@@ -40,7 +40,19 @@
 	height: 100%;
 	padding: 70px 35px;
 }
-
+#loginSave .img {
+	width: 50%;
+	margin: 0 auto;
+}
+#loginSave {
+	margin-bottom: 100px;
+	margin-top: 70px;
+}
+#loginSave .desc {
+	font-size: 22px;
+	text-align: center;
+	margin-top: 30px;
+}
 .login__inner h2 {
 	text-align: center;
 	font-size: 28px;

@@ -11,7 +11,7 @@
                 <span><a href="../login/logout.php" class="logout">로그아웃</a></span>
                 <span class="myPage"><a href="../myPage/myProfile.php">마이페이지</a></span>
                 <div class="main__search">
-                    <a href="search.html"><img src="../html/assets/img/search.jpg" alt="검색 아이콘" /></a>
+                    <a href="../main/search.php"><img src="../html/assets/img/search.jpg" alt="검색 아이콘" /></a>
                 </div>
                 <?php } else { ?>
                 <span><a href="#" class="login">Sign In</a></span>

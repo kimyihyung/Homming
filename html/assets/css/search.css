@@ -60,6 +60,7 @@ section.search_filter_section .third_filter_section.active {
 
 .filter_lists button.filter_btn {
   position: relative;
+  cursor: pointer;
 }
 
 .filter_lists button.filter_btn span.thirdFiltersNumber {

@@ -1,3 +1,7 @@
+<?php
+    include "../connect/session.php";
+    include "../connect/connect.php";
+?>
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -108,7 +112,7 @@
                             </a>
                         </li>
                     </ul>
-                </div>
+                </div>거ㅏㅓ마ㅓ
                 <div class="plantmoaInfo__inner2">
                     <div class="tabInfo active">
                         <figure class="plantmoaInfo__img">
@@ -137,7 +141,7 @@
                             </p>
                         </div>
                     </div>
-                </div>
+                </div>거ㅏㅓ마ㅓ
                 <div class="plantmoaInfo__inner2">
                     <div class="tabInfo">
                         <figure class="plantmoaInfo__img">
@@ -160,7 +164,7 @@
                             </p>
                         </div>
                     </div>
-                </div>
+                </div>거ㅏㅓ마ㅓ
                 <div class="plantmoaInfo__inner2">
                     <div class="tabInfo">
                         <figure class="plantmoaInfo__img">
@@ -186,7 +190,7 @@
                             </p>
                         </div>
                     </div>
-                </div>
+                </div>거ㅏㅓ마ㅓ
                 <div class="plantmoaInfo__inner2">
                     <div class="tabInfo">
                         <figure class="plantmoaInfo__img">

@@ -79,11 +79,12 @@
                                         <p class="p">프로필을 변경합니다.</p>
                                     </div>
                                 </div>
-                                <div class="put">
+                                <div class="put hide">
                                     <label for="youFile" class="input-profile-button blind">파일</label>
-                                    <input class="input" type="file" name="youFile" id="youFile"
-                                        accept=".jpg, .jpeg, .png, .gif" placeholder="이미지를 선택해주세요" style="opacity:0.7;">
-                                    <button type="button" class="myProfile-Btn">
+                                    <span class="inp_placeholder_my" id="inp_placeholder_my">사진을 첨부해 주세요</span>
+                                    <input class="input profile_input" type="file" name="youFile" id="youFile"
+                                        accept=".jpg, .jpeg, .png, .gif" placeholder="이미지를 선택해주세요">
+                                    <!-- <button type="button" class="myProfile-Btn"> -->
 
                                     </button>
                                 </div>
@@ -97,7 +98,7 @@
                                     </div>
                                 </div>
                                 <div class="put">
-                                    <input class="input" type="text" id="youPhone" name="youPhone"
+                                    <input class="input profile_input" type="text" id="youPhone" name="youPhone"
                                         placeholder="전화번호를 입력해주세요">
                                     <button type="button" class="myProfile-Btn">
                                         <p class="msg" id="youPhoneComment"></p>
@@ -116,8 +117,8 @@
                                     <input class="input" type="text" id="youNickName" name="youNickName"
                                         placeholder="닉네임를 입력해주세요" autocomplete="off">
                                     <button type="button" class="myProfile-Btn">
-                                        <!-- <a href="#c" class="check">중복검사</a>
-                                        <p class="msg" id="youNickNameComment"></p> -->
+                                        <a href="#c" class="profile_check" onclick="nickChecking()">중복검사</a>
+                                        <p class="msg" id="youNickNameComment"></p>
                                     </button>
                                 </div>
                             </div>
@@ -133,8 +134,8 @@
                                     <input class="input" type="email" id="youEmail" name="youEmail"
                                         placeholder="아이디를 입력해주세요">
                                     <button type="button" class="myProfile-Btn">
-                                        <!-- <a href="#c" class="check">중복검사</a>
-                                        <p class="msg" id="youEmailComment"></p> -->
+                                        <a href="#c" class="profile_check" onclick="emailChecking()">중복검사</a>
+                                        <p class="msg" id="youEmailComment"></p>
                                     </button>
                                 </div>
                             </div>
@@ -147,7 +148,7 @@
                                     </div>
                                 </div>
                                 <div class="put">
-                                    <input class="input" type="password" id="youPass" name="youPass"
+                                    <input class="input profile_input" type="password" id="youPass" name="youPass"
                                         placeholder="비밀번호를 입력해주세요">
                                     <button type="button" class="myProfile-Btn">
                                         <p class="msg" id="youPassComment"></p>
@@ -163,7 +164,7 @@
                                     </div>
                                 </div>
                                 <div class="put">
-                                    <input class="input" type="password" id="youPassC" name="youPassC"
+                                    <input class="input profile_input" type="password" id="youPassC" name="youPassC"
                                         placeholder="비밀번호를 입력해주세요">
                                     <button type="button" class="myProfile-Btn">
                                         <p class="msg" id="youPassCComment"></p>
@@ -189,137 +190,85 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
-    // let emailCheck = false;
-    // let nickCheck = false;
+    document.getElementById('youFile').addEventListener('change', function() {
+        let filename = document.getElementById('inp_placeholder_my');
+        if (this.files[0] == undefined) {
+            filename.innerText = '선택된 파일없음';
+            return;
+        }
+        filename.innerText = this.files[0].name;
+    });
 
-    // function emailChecking() {
-    //     let youEmail = $("#youEmail").val();
+    let emailCheck = false;
+    let nickCheck = false;
 
-    //     if (youEmail == null || youEmail == '') {
-    //         $("#youEmailComment").text("이메일을 입력해주세요");
-    //     } else {
-    //         $.ajax({
-    //             type: "POST",
-    //             url: "myProfileModify.php",
-    //             data: {
-    //                 "youEmail": youEmail,
-    //                 "type": "emailCheck"
-    //             },
-    //             dataType: "json",
+    function emailChecking() {
+        let youEmail = $("#youEmail").val();
 
-    //             success: function(data) {
-    //                 if (data.result == "good") {
-    //                     $("#youEmailComment").text("사용 가능한 이메일입니다.");
-    //                     emailCheck = true;
-    //                 } else {
-    //                     $("#youEmailComment").text("이미 존재하는 이메일입니다.");
-    //                     emailCheck = false;
-    //                 }
-    //             },
+        if (youEmail == null || youEmail == '') {
+            $("#youEmailComment").text("이메일을 입력해주세요");
+        } else {
+            $.ajax({
+                type: "POST",
+                url: "myProfileModify.php",
+                data: {
+                    "youEmail": youEmail,
+                    "type": "emailCheck"
+                },
+                dataType: "text",
 
-    //             error: function(request, status, error) {
-    //                 console.log("request" + request);
-    //                 console.log("status" + status);
-    //                 console.log("error" + error);
-    //             }
-    //         })
-    //     }
-    // }
+                success: function(data) {
+                    if (data.result == "good") {
+                        $("#youEmailComment").text("사용 가능한 이메일입니다.");
+                        emailCheck = true;
+                    } else {
+                        $("#youEmailComment").text("이미 존재하는 이메일입니다.");
+                        emailCheck = false;
+                    }
+                },
 
-    // function nickChecking() {
-    //     let youNickName = $("#youNickName").val();
+                error: function(request, status, error) {
+                    console.log("request" + request);
+                    console.log("status" + status);
+                    console.log("error" + error);
+                }
+            })
+        }
+    }
 
-    //     if (youEmail == null || youEmail == '') {
-    //         $("#youNickNameComment").text("닉네임을 입력해주세요");
-    //     } else {
-    //         $.ajax({
-    //             type: "POST",
-    //             url: "myProfileModify.php",
-    //             data: {
-    //                 "youNickName": youNickName,
-    //                 "type": "nickCheck"
-    //             },
-    //             dataType: "json",
+    function nickChecking() {
+        let youNickName = $("#youNickName").val();
 
-    //             success: function(data) {
-    //                 if (data.result == "good") {
-    //                     $("#youNickNameComment").text("사용 가능한 닉네임입니다.");
-    //                     nickCheck = true;
-    //                 } else {
-    //                     $("#youNickNameComment").text("이미 존재하는 닉네임입니다.");
-    //                     nickCheck = false;
-    //                 }
-    //             },
+        if (youEmail == null || youEmail == '') {
+            $("#youNickNameComment").text("닉네임을 입력해주세요");
+        } else {
+            $.ajax({
+                type: "POST",
+                url: "myProfileModify.php",
+                data: {
+                    "youNickName": youNickName,
+                    "type": "nickCheck"
+                },
+                dataType: "text",
 
-    //             error: function(request, status, error) {
-    //                 console.log("request" + request);
-    //                 console.log("status" + status);
-    //                 console.log("error" + error);
-    //             }
-    //         })
-    //     }
-    // }
+                success: function(data) {
+                    if (data.result == "good") {
+                        $("#youNickNameComment").text("사용 가능한 닉네임입니다.");
+                        nickCheck = true;
+                    } else {
+                        $("#youNickNameComment").text("이미 존재하는 닉네임입니다.");
+                        nickCheck = false;
+                    }
+                },
 
-    // function joinChecks() {
-    //     // 이메일 유효성 검사
-    //     let getyouEmail = RegExp(/^[A-Za-z0-9_\.\-]+@[A-Za-z0-9\-]+\.[A-Za-z0-9\-]+/);
-    //     if (!getyouEmail.test($("#youEmail").val())) {
-    //         $("#youEmailComment").text("이메일 형식에 맞게 작성해주세요!");
-    //         $("#youEmail").val("");
-    //         return false;
-    //     }
-
-    //     // 이메일 중복 검사
-    //     if (emailCheck == false) {
-    //         $("#youEmailComment").text("이메일 중복 검사를 해주세요!");
-    //         return false;
-    //     }
-
-    //     // 닉네임 유효성 검사
-    //     let getyouNickName = RegExp(/^[가-힣|0-9]+$/);
-    //     if (!getyouNickName.test($("#youNickName").val())) {
-    //         $("#youNickNameComment").text("닉네임은 한글 또는 숫자만 사용 가능합니다.");
-    //         $("#youNickName").val("");
-    //         return false;
-    //     }
-
-    //     // 닉네임 중복 검사
-    //     if (nickCheck == false) {
-    //         $("#youNickNameComment").text("닉네임 중복 검사를 해주세요!");
-    //         return false;
-    //     }
-
-    //     // 비밀번호 유효성 검사
-    //     let getyouPass = $("#youPass").val();
-    //     let getyouPassNum = getyouPass.search(/[0-9]/g);
-    //     let getyouPassEng = getyouPass.search(/[a-z]/ig);
-    //     let getyouPassSpe = getyouPass.search(/[`~!@@#$%^&*|₩₩₩'₩";:₩/?]/gi);
-
-    //     if (getyouPass.length < 8 || getyouPass.length > 20) {
-    //         $("#youPassComment").text("8자리 ~ 20자리 이내로 입력해주세요!");
-    //         return false;
-    //     } else if (getyouPass.search(/\s/) != -1) {
-    //         $("#youPassComment").text("비밀번호는 공백없이 입력해주세요!");
-    //         return false;
-    //     } else if (getyouPassNum < 0 || getyouPassEng < 0 || getyouPassSpe < 0) {
-    //         $("#youPassComment").text("영문, 숫자, 특수문자를 혼합하여 입력해주세요!");
-    //         return false;
-    //     }
-
-    //     // 비밀번호가 동일한지 체크
-    //     if ($("#youPass").val() !== $("#youPassC").val()) {
-    //         $("#youPassCComment").text("비밀번호가 동일하지 않습니다.");
-    //         return false;
-    //     }
-
-    //     // 휴대폰 번호 유효성 검사
-    //     let getyouPhone = RegExp(/01[016789]-[^0][0-9]{2,3}-[0-9]{3,4}/);
-    //     if (!getyouPhone.test($("#youPhone").val())) {
-    //         $("#youPhoneComment").text("휴대폰 번호가 정확하지 않습니다. 올바른 휴대폰번호(000-0000-0000)를 입력해주세요!");
-    //         $("#youPhone").val("");
-    //         return false;
-    //     }
-    // }
+                error: function(request, status, error) {
+                    console.log("request" + request);
+                    console.log("status" + status);
+                    console.log("error" + error);
+                }
+            })
+        }
+    }
     </script>
 </body>
 

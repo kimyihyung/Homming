@@ -1,3 +1,7 @@
+<?php
+    include "../connect/session.php";
+	include "../connect/connect.php";
+?>
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -32,7 +36,7 @@
                     <li><a class="active" href="storeSupplies.php">원예 용품</a></li>
                 </ul>
             </div>
-            <h3 class="storeView_tit">전체 식물 8</h3>
+            <h3 class="storeView_tit">전체 식물 12</h3>
             <div class="storecardView__inner">
                 <div class="storeCard__top">
                     <div class="store__card">
@@ -80,7 +84,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="storeCard__bom">
+                <div class="storeCard__cen">
                     <div class="store__card">
                         <a
                             href="https://search.shopping.naver.com/catalog/24073572949?query=%EC%9B%90%EC%98%88%EC%9A%A9%ED%92%88&NaPm=ct%3Dl9s97yn4%7Cci%3Dae4a181d41940376dfe277341fd420dc327ef14c%7Ctr%3Dslsl%7Csn%3D95694%7Chk%3Dd36056fbd702d2ea0a736df709e66e047381c37d">
@@ -126,19 +130,52 @@
                         </a>
                     </div>
                 </div>
-            </div>
-            <div class="storeView__pages">
-                <ul>
-                    <li><a href="#">&lt;&lt;</a></li>
-                    <li><a href="#">&lt;</a></li>
-                    <li><a class="active" href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#">&gt;</a></li>
-                    <li><a href="#">&gt;&gt;</a></li>
-                </ul>
+                <div class="storeCard__bom">
+                    <div class="store__card">
+                        <a
+                            href="https://smartstore.naver.com/mr_oh/products/5696924543?NaPm=ct%3Dl9wk4ozk%7Cci%3D47497cfe42652c1431fe29c3c557f61c1d2a199e%7Ctr%3Dslsl%7Csn%3D1083054%7Chk%3D0596b1aedcf36fbe6a5fceba3ca9c88eb6a9aeea">
+                            <figure>
+                                <img src="../html/assets/img/store_card10.jpg" alt="식물 이미지" />
+                            </figure>
+                            <h3>바텡크라세 화분 물뿌리개 물조리개</h3>
+                            <div class="price">35,000</div>
+                            <div class="sale">11,200</div>
+                        </a>
+                    </div>
+                    <div class="store__card">
+                        <a
+                            href="https://smartstore.naver.com/potvillage/products/4862799903?NaPm=ct%3Dl9wk857s%7Cci%3De09667412a3ed023c3b5ffcd24657c066d7fac8d%7Ctr%3Dslsl%7Csn%3D897665%7Chk%3D1f004a97587e9dc9953dd1e5dda3ef6547323284">
+                            <figure>
+                                <img src="../html/assets/img/store_card11.jpg" alt="식물 이미지" />
+                            </figure>
+                            <h3>테라코타 이태리 대형 토분</h3>
+                            <div class="price">125,000</div>
+                            <div class="sale">25,000</div>
+                        </a>
+                    </div>
+                    <div class="store__card">
+                        <a
+                            href="https://smartstore.naver.com/bonfirm/products/7337591766?n_media=11068&n_query=%EB%B2%A0%EB%9E%80%EB%8B%A4%EB%B9%84%EB%8B%90%ED%95%98%EC%9A%B0%EC%8A%A4&n_rank=2&n_ad_group=grp-a001-02-000000029602068&n_ad=nad-a001-02-000000205653233&n_campaign_type=2&n_mall_id=ncp_1o02w4_01&n_mall_pid=7337591766&n_ad_group_type=2&NaPm=ct%3Dl9wkbt5s%7Cci%3D0AC0001WyjXxLqqf3LkK%7Ctr%3Dpla%7Chk%3D31e8bdd87ea667af4ccc5e4178a5cb8530b4976e">
+                            <figure>
+                                <img src="../html/assets/img/store_card12.jpg" alt="식물 이미지" />
+                            </figure>
+                            <h3>가정용 미니온실</h3>
+                            <div class="price">39,900</div>
+                            <div class="sale">35,770</div>
+                        </a>
+                    </div>
+                    <div class="store__card">
+                        <a
+                            href="https://smartstore.naver.com/aflowergardening/products/4774947329?NaPm=ct%3Dl9wkfuzs%7Cci%3D8ec1278222722ba68acbaebcdbb4c9a1712e84c2%7Ctr%3Dslsl%7Csn%3D1039232%7Chk%3Dd9a498515440ed0988553bcdaed70c38e66c0b2b">
+                            <figure>
+                                <img src="../html/assets/img/store_card13.jpg" alt="식물 이미지" />
+                            </figure>
+                            <h3>소나무 나무껍질 분갈이흙</h3>
+                            <div class="price">44,000</div>
+                            <div class="sale">4,400</div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- //storeCard -->
