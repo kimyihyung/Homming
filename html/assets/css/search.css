@@ -137,20 +137,24 @@ section.search_filter_section .third_filter_section.active {
 
 /* search */
 .search__inner {
-  margin-top: 30px;
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
+  gap: 53px;
   flex-wrap: wrap;
+  margin-top: 50px;
 }
 
 .search__inner .search {
-  width: 18%;
+  width: 250px;
+  transition: all 0.3s;
 }
-.search .plant__image {
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  padding-top: 100%;
+.search__inner .search:hover {
+  scale: 1.05;
+}
+
+.search__header figure img {
+  width: 250px;
+  height: 250px;
   margin-bottom: 20px;
   border-radius: 10px;
   background-color: #d9d9d9;
@@ -164,17 +168,13 @@ section.search_filter_section .third_filter_section.active {
 }
 
 .search__contents h3 {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   font-style: normal;
   text-align: left;
   margin-left: 14px;
   margin-bottom: 10px;
   cursor: pointer;
-  width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .search__contents img {
@@ -185,7 +185,68 @@ section.search_filter_section .third_filter_section.active {
 #categoryOption {
   padding: 5px;
 }
-
-.search {
+/* .search {
   margin-bottom: 50px;
+} */
+
+/* plantmoaView__inner */
+.plantmoaView__inner {
+  display: flex;
+  padding-top: 77px;
+}
+.plantmoaView__img {
+  top: 0;
+  left: 0;
+  width: 460px;
+  height: 460px;
+  margin-right: 73px;
+}
+.plantmoaView__contents {
+  width: 60%;
+}
+.plantmoaView__contents .title h1 {
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  color: #00b564;
+  margin-bottom: 4px;
+}
+.plantmoaView__contents .title h2 {
+  font-size: 22px;
+  font-weight: bold;
+  font-style: normal;
+  margin-bottom: 10px;
+}
+.plantmoaView__keywords {
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+.plantmoaView__keyword {
+  padding: 9px 17px 6px;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  font-size: 14px;
+  letter-spacing: -0.7px;
+  text-align: center;
+  color: #666;
+  margin-bottom: 6px;
+  margin-right: 10px;
+}
+.plantmoaView__con p {
+  line-height: 1.6;
+  font-weight: normal;
+  font-style: normal;
+  margin-bottom: 42px;
+}
+
+.plantmoaView__item {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin-bottom: 140px;
 }

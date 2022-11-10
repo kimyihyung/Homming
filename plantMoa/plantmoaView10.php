@@ -153,6 +153,7 @@
                             <h3 class="plantInfo__tit2">빛이 너무 강하면</h3>
                             <p class="plantInfo__desc2">
                                 뜨거운 직접적인 햇빛 아래에서는 잎 끝이 탈 수 있어 커튼이나 블라인드로 약간의 차광을 해주시는 게 좋아요.
+                            </p>
                             <h3 class="plantInfo__tit3">빛이 너무 약하면</h3>
                             <p class="plantInfo__desc3">
                                 빛이 너무 약하면 호세부오노의 성장속도가 아주 느려질 수 있어요. 또한 잎이 노랗게 바라고, 줄기가 힘이 없어져 축 처져 자라는 현상이 나타날 수 있어요.
@@ -225,8 +226,9 @@
     <?php include "../include/footer.php" ?>
     <!-- footer -->
     <?php include "../login/login.php" ?>
-    <!-- login팝업 -->
-    <script src="../../html/../html/assets/js/login.js"></script>
+    <!-- login -->
+    
+    <script src="../assets/js/login.js"></script>
 
     <script>
         //식물 모아 상세 관리 탭 버튼

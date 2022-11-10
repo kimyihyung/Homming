@@ -112,7 +112,7 @@
                             </a>
                         </li>
                     </ul>
-                </div>거ㅏㅓ마ㅓ
+                </div>
                 <div class="plantmoaInfo__inner2">
                     <div class="tabInfo active">
                         <figure class="plantmoaInfo__img">
@@ -141,7 +141,7 @@
                             </p>
                         </div>
                     </div>
-                </div>거ㅏㅓ마ㅓ
+                </div>
                 <div class="plantmoaInfo__inner2">
                     <div class="tabInfo">
                         <figure class="plantmoaInfo__img">
@@ -156,7 +156,8 @@
                             <p class="plantInfo__desc2">
                                 녹영은 은은한 밝은 빛을 좋아하는 식물입니다. 너무 강한 빛을 지속적으로 받게 되면 줄기 끝 생장점이 탈 수 있어요. 따라서 한여름철의 강한 햇빛이 들어오는
                                 공간이라면 커튼이나 블라인드 등으로 빛을 가려주시는 게
-                                좋아요.
+                                좋아요. 
+                            </p>
                             <h3 class="plantInfo__tit3">빛이 너무 약하면</h3>
                             <p class="plantInfo__desc3">
                                 빛이 많이 부족할 경우 줄기 마디가 길어져 풍성한 느낌이 줄어들 수 있어요. 화분을 주기적으로 돌려주어 빛을 골고루 받을 수 있게 해주시면 통통하고 풍성한
@@ -164,7 +165,7 @@
                             </p>
                         </div>
                     </div>
-                </div>거ㅏㅓ마ㅓ
+                </div>
                 <div class="plantmoaInfo__inner2">
                     <div class="tabInfo">
                         <figure class="plantmoaInfo__img">
@@ -190,7 +191,7 @@
                             </p>
                         </div>
                     </div>
-                </div>거ㅏㅓ마ㅓ
+                </div>
                 <div class="plantmoaInfo__inner2">
                     <div class="tabInfo">
                         <figure class="plantmoaInfo__img">
@@ -226,8 +227,9 @@
     <?php include "../include/footer.php" ?>
     <!-- footer -->
     <?php include "../login/login.php" ?>
-    <!-- login팝업 -->
-    <script src="../../html/../html/assets/js/login.js"></script>
+    <!-- login -->
+    
+    <script src="../assets/js/login.js"></script>
 
     <script>
         //식물 모아 상세 관리 탭 버튼

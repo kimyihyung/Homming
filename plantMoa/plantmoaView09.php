@@ -152,6 +152,7 @@
                             <p class="plantInfo__desc2">
                                 플니스 오브 오렌지는 뜨거운 직접적인 햇빛을 너무 오래 받으면 잎에 갈색 점이 생길 수 있어 커튼이나 블라인드로 약간의 차광을 해주시거나 너무 오래 강한 빛에
                                 노출되지 않도록 해주는 게 좋아요.
+                            </p>
                             <h3 class="plantInfo__tit3">빛이 너무 약하면</h3>
                             <p class="plantInfo__desc3">
                                 빛이 너무 약하면 잎에 힘이 없어져 축 처져 자라는 현상이 나타날 수 있어요. 아름다운 빛깔의 잎을 즐기기 위해서는 조금 더 밝은 곳으로 옮겨주세요.
@@ -220,8 +221,9 @@
     <?php include "../include/footer.php" ?>
     <!-- footer -->
     <?php include "../login/login.php" ?>
-    <!-- login팝업 -->
-    <script src="../../html/../html/assets/js/login.js"></script>
+    <!-- login -->
+    
+    <script src="../assets/js/login.js"></script>
 
     <script>
         //식물 모아 상세 관리 탭 버튼

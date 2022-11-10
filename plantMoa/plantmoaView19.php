@@ -152,6 +152,7 @@
                             <p class="plantInfo__desc2">
                                 금황환은 아주 강하고 뜨거운 빛에서도 잘 자라요. 하지만 한여름철에는 뜨거운 빛의 열기로 인해 흙의 온도도 과하게 올라가 열기로 인한 스트레스를 받을 수
                                 있으니 살짝 차광을 해주는 게 좋아요.
+                            </p>
                             <h3 class="plantInfo__tit3">빛이 너무 약하면</h3>
                             <p class="plantInfo__desc3">
                                 빛이 부족할 경우 줄기가 얇게 웃자라고 밝은 곳을 향해 굽어 자랄 수 있어요. 또한 흙이 잘 마르지 않아 몸통이 물러질 위험도 높아지니 밝은 빛을 받을 수
@@ -215,8 +216,9 @@
     <?php include "../include/footer.php" ?>
     <!-- footer -->
     <?php include "../login/login.php" ?>
-    <!-- login팝업 -->
-    <script src="../../html/../html/assets/js/login.js"></script>
+    <!-- login -->
+    
+    <script src="../assets/js/login.js"></script>
 
     <script>
         //식물 모아 상세 관리 탭 버튼

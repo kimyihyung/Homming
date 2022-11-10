@@ -160,6 +160,10 @@
 .mainColumn__inner {
   display: flex;
   justify-content: space-between;
+  transition: all 0.3s;
+}
+.mainColumn__inner:hover {
+  scale: 1.05;
 }
 .mainColumn__inner .column_left {
   width: 40%;
@@ -253,6 +257,11 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  transition: all 0.3s;
+}
+
+.card .swiper-slide:hover {
+  scale: 1.05;
 }
 .card .swiper-slide img {
   width: 90%;

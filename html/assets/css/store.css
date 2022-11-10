@@ -1,24 +1,22 @@
 /* 스토어 슬라이더 */
 .storeSlider__wrap {
   width: 100%;
-  height: 550px;
+  margin-top: 70px;
 }
 
 .storeSlider {
   position: relative;
   overflow: hidden;
-  width: 1691px;
+  width: 1160px;
 }
 
 .storeSlider__img {
-  height: 550px;
   width: 10000px;
   display: flex;
 }
 
 .storeSlider__img .slider {
-  height: 550px;
-  width: 1691px;
+  width: 1160px;
 }
 
 .storeSlider .desc {

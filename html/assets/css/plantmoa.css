@@ -26,7 +26,8 @@
 /* card */
 .card__inner {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
+  gap: 53px;
   flex-wrap: wrap;
   margin-top: 50px;
 }
@@ -350,4 +351,16 @@ ul.notice-items {
   border-radius: 10px;
   background-color: #d9d9d9;
   cursor: pointer;
+}
+
+.plantmoaView__img2 {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #d9d9d9;
+  top: 0;
+  left: 0;
+  width: 460px;
+  height: 460px;
+  margin-right: 73px;
 }

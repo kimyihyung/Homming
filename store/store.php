@@ -28,7 +28,7 @@
     <main id="main">
         <section id="storeSlider" class="storeSlider__wrap">
             <h2 class="blind">새로운 스토어 업데이트</h2>
-            <div class="storeSlider__inner">
+            <div class="storeSlider__inner container">
                 <div class="storeSlider">
                     <div class="storeSlider__img">
                         <figure class="slider">
@@ -167,6 +167,9 @@
 
     <?php include "../include/footer.php" ?>
     <!-- footer -->
+    <?php include "../login/login.php" ?>
+    <!-- login팝업 -->
+    <script src="../assets/js/login.js"></script>
 
     <script>
     const storeSliderInner = document.querySelector(".storeSlider__inner");

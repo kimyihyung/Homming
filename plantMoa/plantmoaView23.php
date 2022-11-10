@@ -153,6 +153,7 @@
                             <p class="plantInfo__desc2">
                                 한낮의 너무 강한 빛을 지속적으로 받게 되면 줄기 끝 생장점이 탈 수 있어요. 따라서 한여름철의 강한 햇빛이 들어오는 공간이라면 커튼이나 블라인드 등으로 빛을
                                 가려주시는 게 좋아요.
+                            </p>
                             <h3 class="plantInfo__tit3">빛이 너무 약하면</h3>
                             <p class="plantInfo__desc3">
                                 빛이 부족할 경우 줄기 마디가 길어져 웃자랄 수 있어요. 화분을 주기적으로 돌려주어 빛을 골고루 받을 수 있게 해주시면 조밀조밀 예쁘게 자란 녹탑을 만날 수
@@ -222,8 +223,9 @@
     <?php include "../include/footer.php" ?>
     <!-- footer -->
     <?php include "../login/login.php" ?>
-    <!-- login팝업 -->
-    <script src="../../html/../html/assets/js/login.js"></script>
+    <!-- login -->
+    
+    <script src="../assets/js/login.js"></script>
 
     <script>
         //식물 모아 상세 관리 탭 버튼

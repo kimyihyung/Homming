@@ -53,8 +53,10 @@
 }
 
 .main__search {
+  display: inline;
+}
+.main__search img {
   width: 2%;
-  float: right;
 }
 
 @media (max-width: 550px) {

@@ -281,6 +281,11 @@
   justify-content: space-between;
 }
 
+.myChange .info {
+  margin-top: 40px;
+  color: #666;
+}
+
 .sel {
   display: flex;
 }
@@ -295,6 +300,7 @@
 
 .put {
   display: flex;
+  position: relative;
 }
 
 .text .p {
@@ -632,6 +638,12 @@
 
 .mypage__pages ul li.active a {
   text-decoration: underline;
+}
+#youNickNameComment,
+#youEmailComment {
+  position: absolute;
+  right: 10px;
+  bottom: 6px;
 }
 
 /* mypage__pages */

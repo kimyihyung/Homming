@@ -63,68 +63,6 @@
                         </tbody>
                     </table>
                 </div>
-                <?php
-    $currentView = $_GET['myBoardID'];
-    $currentTitle = $_GET['boardTitle'];
-    $preView = $currentView-1;
-    $nextView = $currentView+1;
-
-    //갯수구하기
-    $sql = "SELECT count(myBoardID) FROM myBoard";
-    $result = $connect -> query($sql);
-
-    $boardCount = $result -> fetch_array(MYSQLI_ASSOC);
-    $boardCount = $boardCount['count(myBoardID)'];
-    
-    $sql = "SELECT b.boardTitle FROM myBoard WHERE b.myBoardID = {$currentView}"; 
-    $connect -> query($sql);
-
-    if($currentView <=1){
-        echo "<button class = 'prev__view none'><a href = '#'></a></button>";
-    } else {
-        echo "<button class = 'prev__view'><a href='http://homming.dothome.co.kr/board/boardView.php?myBoardID={$preView}'>".''."</a></button>";
-    }
-
-    if($currentView >= $boardCount) {
-        echo "<button class = 'next__view none'><a href = '#'></a></button>";
-    } else {
-        echo "<button class = 'next__view'><a href='http://homming.dothome.co.kr/board/boardView.php?myBoardID={$nextView}'>".''."</a></button>";
-    }
-
-    
-    
-    
-
-    
-
-
-    // if($currentView <= 1){
-    //     echo "<tr class = 'tr1'><th>이전글</th><td><a href= '#'>등록된 이전글이 없습니다.</a></td></tr>";
-    // }
-
-    // if($connect){
-    //     echo "<tr class = 'tr1'><th>이전글</th><td><a href='http://homming.dothome.co.kr/board/boardView.php?myBoardID={$preView}'>".$info['boardTitle']."</a></td></tr>";
-    //     echo "<tr class = 'tr2'><th>다음글</th><td><a href='http://homming.dothome.co.kr/board/boardView.php?myBoardID={$nextView}'>".$info['boardTitle']."</a></td></tr>";
-    // }
-    // if($currentView >= $boardCount){
-    //     echo "<tr class = 'tr2'><th>다음글</th><td><a href= '#'>등록된 다음글이 없습니다.</a></td></tr>";
-    // }
-?>
-                <!-- <div class="reply_view"> -->
-                <!-- <h3>댓글목록</h3> -->
-
-
-                <!--- 댓글 입력 폼 -->
-                <!-- <div class="dap_ins">
-                        <form action="" method="post">
-                            <input type="hidden" name="dat_user" id="dat_user" class="dat_user" size="15" placeholder="아이디" value=>
-                            <div style="margin-top:10px; ">
-                                <textarea name="content" class="reply_content" id="re_content" ></textarea>
-                                <button id="rep_bt" class="re_bt">댓글</button>
-                            </div>
-                        </form>
-                    </div> -->
-                <!-- </div> -->
                 <div class="board__btn">
                     <a href="boardModify.php?myBoardID=<?=$myBoardID?>">수정하기</a>
                     <a href="boardRemove.php?myBoardID=<?=$myBoardID?>" onClick="alert('정말 삭제하시겠습니까?')">삭제하기</a>

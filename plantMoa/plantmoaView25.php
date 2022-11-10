@@ -152,6 +152,7 @@
                             <p class="plantInfo__desc2">
                                 강한 빛을 지속적으로 받게 되면 줄기 끝에 화상을 입을 수 있어요. 따라서 한여름철의 강한 햇빛이 바로 들어오는 공간이라면 커튼이나 블라인드 등으로 빛을 살짝
                                 가려주시는 게 좋아요.
+                            </p>
                             <h3 class="plantInfo__tit3">빛이 너무 약하면</h3>
                             <p class="plantInfo__desc3">
                                 빛이 많이 부족할 경우 줄기가 얇게 웃자라고 밝은 곳을 향해 굽어 자랄 수 있어요. 또한 흙이 잘 마르지 않아 몸통이 물러질 위험도 높아지니 밝은 빛을 받을
@@ -215,8 +216,9 @@
     <?php include "../include/footer.php" ?>
     <!-- footer -->
     <?php include "../login/login.php" ?>
-    <!-- login팝업 -->
-    <script src="../../html/../html/assets/js/login.js"></script>
+    <!-- login -->
+    
+    <script src="../assets/js/login.js"></script>
 
     <script>
         //식물 모아 상세 관리 탭 버튼

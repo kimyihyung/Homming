@@ -157,6 +157,7 @@
                             <h3 class="plantInfo__tit2">빛이 너무 강하면</h3>
                             <p class="plantInfo__desc2">
                                 스킨답서스는 뜨거운 햇빛 아래에서는 잎 끝이 탈 수 있어 커튼이나 블라인드로 약간의 차광을 해주시는 게 좋아요.
+                            </p>
                             <h3 class="plantInfo__tit3">빛이 너무 약하면</h3>
                             <p class="plantInfo__desc3">
                                 스킨답서스는 빛이 너무 약하면 아름다운 형광빛 잎이 짙은 녹색으로 변할 수 있고, 잎이 생기는 마디가 길어져 헐빈해 보일 수 있으니 은은한 밝은 빛이 드는
@@ -229,8 +230,9 @@
     <?php include "../include/footer.php" ?>
     <!-- footer -->
     <?php include "../login/login.php" ?>
-    <!-- login팝업 -->
-    <script src="../../html/../html/assets/js/login.js"></script>
+    <!-- login -->
+    
+    <script src="../assets/js/login.js"></script>
 
     <script>
         //식물 모아 상세 관리 탭 버튼

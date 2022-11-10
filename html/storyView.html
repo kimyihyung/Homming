@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP 사이트 만들기 - 블로그</title>
+
+    <link rel="stylesheet" href="../html/assets/css/style.css">
+
+</head>
+<body>
+    <div id="skip">
+        <a href="#header">헤더 영역 바로가기</a>
+        <a href="#main">컨텐츠 영역 바로가기</a>
+        <a href="#footer">푸터 영역 바로가기</a>
+    </div>
+    <!-- //skip -->
+    
+    <header id="header">
+        <div class="header__inner container">
+            <div class="logo">
+                <figure>
+                    <img src="../assets/img/logo.png" alt="로고이미지">
+                </figure>
+            </div>
+            <div class="right">
+                <div class="signIn">
+                    <span class="login"><a href="login.html">Sign In</a></span>
+                    <span class="myPage"><a href="#">마이페이지</a></span>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#"><span>식물모아</span></a></li>
+                        <li><a href="#"><span>칼럼</span></a></li>
+                        <li><a href="#"><span>스토리</span></a></li>
+                        <li><a href="#"><span>스토어</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <main id="main">
+        <section id="storyVeiw">
+            <div class="story__header" style="background-image:url(../html/assets/img/storyVeiw_header.jpg)">
+                <div class="story__title container">
+                    <h2 class="story__title__h1">
+                        쌍추추추 상추가 너무 잘자랐다!! 상추좀 봐주세요!!!
+                    </h2>
+                    <span class="story__title__cate">식물자랑</span>
+                    <div class="story__title__info">
+                        <div>
+                            <span class="author">쌍츄츄</span>
+                            <span class="date">2022.10.20</span>
+                        </div>
+                        <div>
+                            <a href="" class="modify">수정</a>
+                            <a href="" class="delete">삭제</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="storyView__inner container">
+                <div class="story__contents">
+                    <div class="story__contents__ad">
+                        <div></div>
+                    </div>
+                    <!-- //blog__contents__ad -->
+                    <div class="story__contents__cont">
+                        <figure>
+                            <img src="../html/assets/img/storyVeiw_main.jpg" alt="">
+                        </figure>
+                        <div class="story__contents__write">
+                            이번주말에는 배추를 묶어서 속을 채워요 
+                            무는 뽑을때가한참지낫는데 서리맞으면 더 맛잇다는 할머님의 말을 따라 아직 땅에 심어두엇답니다
+                            상추는 진짜 냅두면 걍 잘커서 물만 잘 주다가 먹고싶을때 뽑아먹구
+                            고추도 주렁주렁인대 너무매워서 우리집아무도못먹는중
+                            여름철 텃밭에서 상추 재배에 성공하기 위해서는 꽃대가 늦게 성장하고 더위에 견디는 성질이 강한 품종을 선택하는 것이 무엇보다 중요하다. 우리에게 쌈 채소로 익숙한 청치마, 청축면, 적치마, 적축면 등 잎상추를 심으면 크게 무리가 없다. 베란다 텃밭이라면 빛의 양이 적은 조건에서도 잘 자라는 ‘장수’, ‘춘풍 적축면’, ‘하청’ 등 3개 품종이 재배에 알맞다. 
+                            이들 품종들은 빛의 양이 적어도 일정 수준의 생육량과 외관상 우수한 품질을 보인다.
+                            상추는 사계절 동안 재배가 가능하지만 적기는 4월 상·중순이다. 그 지방에서 벚꽃이 필 무렵이라고 생각하면 된다. 봄철에 파종한 상추는 여름에 꽃대가 올라오면 품질이 저하되기 때문에 날씨가 더워지기 전 가급적 일찍 파종하는 것이 좋다.
+                            상추는 파종하고 나서 곧바로 밭을 준비해야 한다. 밭을 갈아엎고 비료를 넣어 정지작업을 하는데 비료가 토양 속에 녹아들어 고루 분포하려면 10일의 시간이 필요하다. 따라서 밭에 심기 2주 전에 거름을 주고 이랑을 만들어 비닐을 피복해 둔다.
+                            파종은 파종상자에 줄뿌림하여 육묘하는 방법과 128, 162, 200공 육묘용 플러그 트레이에 파종하는 방법이 있다. 플러그 트레이에 파종할 경우 홀 1개당 3립씩을 넣고 가급적 얕게 흙을 덮어 준다. 파종 후 7∼10일이 경과하면 모두 발아하는데 잘 자란 것만 남기고 나머지는 솎아준다. 
+                            육묘기간은 봄, 가을은 30일, 여름철은 25일, 겨울철은 35일가량 소요된다.
+                        </div>
+                    </div>
+                    <!-- //blog__contents__cont -->
+                    <div class="story__contents__comment">
+                        <h3>댓글</h3>
+                        <div class="comment" id="comment">
+                            <div class="comment__view__img">
+                                <img src="../html/assets/img/column05.jpg" alt="프로필">
+                            </div>
+                            <div class="comment__view">
+                                <div class="comment__view__data">
+                                    <span class="name">고구마먹고싶다</span>
+                                    <span class="date">2022.10.20</span>
+                                </div>
+                                <div class="comment__view__msg">
+                                    상추너무 맛있어보여요!!! 저도 먹고 싶네요!!ㅠㅠ상추너무 맛있어보여요!!! 저도 먹고 싶네요!!ㅠㅠ상추너무 맛있어보여요!!! 저도 먹고 싶네요!!ㅠㅠ
+                                </div>
+                                <div class="comment__del">
+                                    <a href="#" class="comment__del__del">댓글 삭제</a>
+                                    <a href="#" class="comment__del__mod">댓글 수정</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment" id="comment">
+                            <div class="comment__view__img">
+                                <img src="../html/assets/img/column05.jpg" alt="프로필">
+                            </div>
+                            <div class="comment__view">
+                                <div class="comment__view__data">
+                                    <span class="name">고구마먹고싶다</span>
+                                    <span class="date">2022.10.20</span>
+                                </div>
+                                <div class="comment__view__msg">
+                                    상추너무 맛있어보여요!!! 저도 먹고 싶네요!!ㅠㅠ
+                                </div>
+                                <div class="comment__del">
+                                    <a href="#" class="comment__del__del">댓글 삭제</a>
+                                    <a href="#" class="comment__del__mod">댓글 수정</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment__delete" style="display:block">
+                            <label for="commentDeletePass" class="blind">비밀번호 입력</label>
+                            <input type="text" id="commentDeletePass" name="commentDeletePass" placeholder="삭제하실려면 비밀번호를 입력해주세요!!">
+                            <button id="commentDeleteCancel">취소</button>
+                            <button id="commentDeleteButton">삭제</button>
+                        </div>
+                        <div class="comment__modify" style="display:block">
+                            <label for="commentModifyMsg" class="blind">수정 내용</label>
+                            <textarea type="text" id="commentModifyMsg" row="8" name="commentModifyMsg"></textarea>
+                            <label for="commentModifyPass" class="blind">비밀번호</label>
+                            <input type="text" id="commentModifyPass" name="commentModifyPass" placeholder="비밀번호를 입력해주세요!!">
+                            <button id="commentModifyCancel">취소</button>
+                            <button id="commentModifyButton">수정</button>
+                        </div>
+                    </div>
+                    <div class="comment__write">
+                        <div class="comment__write__msg">
+                            <label for="commentWrite" class="blind">댓글 쓰기</label>
+                            <textarea type="text" id="commentWrite" name="commentWrite" row="10" placeholder="댓글을 입력해주세요!!"></textarea>
+                        </div>
+                        <div class="comment__write__info">
+                            <!-- <label for="commentName" class="blind">이름</label>
+                            <input type="text" id="commentName" name="commentName" placeholder="이름"> -->
+                            <label for="commentPass" class="blind">비밀번호</label>
+                            <input type="text" id="commentPass" name="commentPass" placeholder="비밀번호">
+                            <button type="submit" id="commentBtn">댓글 쓰기</button>
+                        </div>
+                    </div>
+                    <!-- //story__contents__comment -->
+                </div>
+                <!-- //story__contents -->
+                <div class="story__aside">
+                    <div class="story__aside__intro">
+                        <div class="img">
+                            <img src="../html/assets/img/storyVeiw_info.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="story__aside__cate">
+                        <h3>카테고리</h3>
+                        <ul>
+                            <li><a href="blogCategory.php?category=apple">식물자랑</a></li>
+                            <li><a href="blogCategory.php?category=samsung">인테리어</a></li>
+                            <li><a href="blogCategory.php?category=toss">지식공유 | 질문</a></li>
+                        </ul>
+                    </div>
+                    <div class="story__aside__new">
+                        <h3>최신글</h3>
+                        <ul>
+                            <li>
+                                <a href="#"><span><img src="../html/assets/img/storyVeiws_ad01.jpg" alt=""></span>
+                                     <em>여러분 쌍추 너무 귀엽죠? 완..</em>
+                                     <p>2022.10.02</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><span><img src="../html/assets/img/storyVeiws_ad02.jpg" alt=""></span>
+                                     <em>이런것도 색다르고 너무 좋...</em>
+                                     <p>2022.10.02</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><span><img src="../html/assets/img/storyVeiws_ad03.jpg" alt=""></span>
+                                     <em>연어가 의외로 인기가 많다는...</em>
+                                     <p>2022.10.02</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="story__aside__comment">
+                        <h3>최신 댓글</h3>
+                        <ul>
+                            <li><a href="">혁식적인 서능을 자랑하는 M2 칩...</a></li>
+                            <li><a href="">혁식적인 서능을 자랑하는 M2 칩...</a></li>
+                            <li><a href="">혁식적인 서능을 자랑하는 M2 칩...</a></li>
+                            <li><a href="">혁식적인 서능을 자랑하는 M2 칩...</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="story__relation"></div>
+            </div>
+        </section>
+    </main>
+    <!-- //main -->
+    <footer id="footer">
+        <h2>푸터 영역입니다.</h2>
+        <div class="footer__inner container">
+            <p>Copyright 2022. Homming, Co., Ltd. All rights reserved</p>
+        </div>
+    </footer>
+
+    <!-- //footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+</body>
+</html>

@@ -43,7 +43,6 @@
     } else {
         //echo "이미지 파일을 첨부하지 않았습니다.";
         $sql = "INSERT INTO myBoard(myMemberID, boardTitle, boardImgFile, boardImgsize, boardContents, boardView, boardLike, regTime) VALUES('$myMemberID', '$boardTitle', 'Img_default.jpg', '$boardImgSize', '$boardContents', '$boardView', '$boardLike', '$regTime')";
-        $connect -> query($sql);
         
     }
 

@@ -39,7 +39,7 @@
             <div class="mypage__menu">
                 <a href="myProfile.php" class="myProfile">
                     <?php
-    $myProfileSql = "SELECT m.youNickName, m.youName, m.youImgFile, m.myMemberID, b.myMemberID, b.storyImgFile, b.storyCategory, b.storyView, b.storyContents, b.storyTitle, b.myStoryID, b.storyRegTime FROM myStory b JOIN myAdminMember m ON (m.myMemberID = b.myMemberID) WHERE storyDelete = 0 AND b.myMemberID = '$myMemberID' ORDER BY myStoryID DESC LIMIT 10";
+    $myProfileSql = "SELECT m.youNickName, m.youName, m.youEmail, m.youImgFile, m.myMemberID, b.myMemberID, b.storyImgFile, b.storyCategory, b.storyView, b.storyContents, b.storyTitle, b.myStoryID, b.storyRegTime FROM myStory b JOIN myAdminMember m ON (m.myMemberID = b.myMemberID) WHERE storyDelete = 0 AND b.myMemberID = '$myMemberID' ORDER BY myStoryID DESC LIMIT 10";
     $myProfileResult = $connect -> query($myProfileSql);
     $myProfileInfo = $myProfileResult -> fetch_array(MYSQLI_ASSOC);
 ?>
@@ -97,6 +97,9 @@
                                         <p class="p">연락처를 변경합니다.</p>
                                     </div>
                                 </div>
+                                <div class="info">
+                                    <?=$memberInfo['youPhone']?>
+                                </div>
                                 <div class="put">
                                     <input class="input profile_input" type="text" id="youPhone" name="youPhone"
                                         placeholder="전화번호를 입력해주세요">
@@ -112,6 +115,9 @@
                                         <p class="title">닉네임 변경</p>
                                         <p class="p">닉네임를 변경합니다.</p>
                                     </div>
+                                </div>
+                                <div class="info">
+                                    <?=$memberInfo['youNickName']?>
                                 </div>
                                 <div class="put">
                                     <input class="input" type="text" id="youNickName" name="youNickName"
@@ -129,6 +135,9 @@
                                         <p class="title">이메일 변경</p>
                                         <p class="p">이메일을 변경합니다.</p>
                                     </div>
+                                </div>
+                                <div class="info">
+                                    <?=$memberInfo['youEmail']?>
                                 </div>
                                 <div class="put">
                                     <input class="input" type="email" id="youEmail" name="youEmail"
@@ -198,7 +207,8 @@
         }
         filename.innerText = this.files[0].name;
     });
-
+    </script>
+    <script>
     let emailCheck = false;
     let nickCheck = false;
 
@@ -210,15 +220,15 @@
         } else {
             $.ajax({
                 type: "POST",
-                url: "myProfileModify.php",
+                url: "myPageCheck.php",
                 data: {
                     "youEmail": youEmail,
                     "type": "emailCheck"
                 },
-                dataType: "text",
+                dataType: "json",
 
                 success: function(data) {
-                    if (data.result == "good") {
+                    if (data.result === "good") {
                         $("#youEmailComment").text("사용 가능한 이메일입니다.");
                         emailCheck = true;
                     } else {
@@ -239,17 +249,17 @@
     function nickChecking() {
         let youNickName = $("#youNickName").val();
 
-        if (youEmail == null || youEmail == '') {
+        if (youNickName == null || youNickName == '') {
             $("#youNickNameComment").text("닉네임을 입력해주세요");
         } else {
             $.ajax({
                 type: "POST",
-                url: "myProfileModify.php",
+                url: "myPageCheck.php",
                 data: {
                     "youNickName": youNickName,
                     "type": "nickCheck"
                 },
-                dataType: "text",
+                dataType: "json",
 
                 success: function(data) {
                     if (data.result == "good") {

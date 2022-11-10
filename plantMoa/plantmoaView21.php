@@ -153,6 +153,7 @@
                             <p class="plantInfo__desc2">
                                 강한 햇빛을 지속적으로 받게되면 흙의 온도가 함께 올라가 스트레스를 받을 수 있어요. 한낮의 직사광선이 계속해서 들어오는 공간이라면 커튼이나 블라인드 등으로
                                 빛을 살짝 가려주시는 게 좋아요.
+                            </p>
                             <h3 class="plantInfo__tit3">빛이 너무 약하면</h3>
                             <p class="plantInfo__desc3">
                                 빛이 약하면 흙이 마르는 속도도 느려지기 때문에 습기에 약한 제옥이 과습의 해를 입을 수 있으니 밝은 빛을 받을 수 있는 곳으로 옮겨주세요. 또한 빛이 적은
@@ -221,8 +222,9 @@
     <?php include "../include/footer.php" ?>
     <!-- footer -->
     <?php include "../login/login.php" ?>
-    <!-- login팝업 -->
-    <script src="../../html/../html/assets/js/login.js"></script>
+    <!-- login -->
+    
+    <script src="../assets/js/login.js"></script>
 
     <script>
         //식물 모아 상세 관리 탭 버튼

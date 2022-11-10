@@ -110,7 +110,7 @@
                 echo "</tr>";
             }
         } else {
-            echo "<tr><td colspan='4'>게시글이 없습니다.</td></tr>";    
+            echo "<tr><td colspan='5'>게시글이 없습니다.</td></tr>";    
         }
     }
 ?>
@@ -152,11 +152,12 @@
     }
 
     //다음 페이지, 마지막 페이지
-    if($page != $endPage) {
+    if($page > 1 && $page != $endPage) {
         $nextPage = $page + 1;
         echo "<li><a href='boardSearch.php?page={$nextPage}&searchKeyword={$searchKeyword}&searchOption={$searchOption}'>&gt;</a></li>";
         echo "<li><a href='boardSearch.php?page={$boardCount}&searchKeyword={$searchKeyword}&searchOption={$searchOption}'>&gt;&gt;</a></li>";
     }
+
 ?>
                     </ul>
                 </div>

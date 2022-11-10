@@ -32,6 +32,12 @@
             $fileTypeExtension = explode("/", $youImgType);
             $fileType = $fileTypeExtension[0];      //image
             $fileExtension = $fileTypeExtension[1]; //png
+
+            //이미지 사이즈 확인
+            if($youImgSize > 1000000){
+                echo "<script>alert('이미지 용량이 1메가를 초과했습니다.'); history.back(1)</script>";
+                exit;
+            }
     
             //이미지 타입 확인
             if($fileType == "image"){
@@ -52,11 +58,7 @@
             }
         } 
     
-        //이미지 사이즈 확인
-        if($youImgSize > 1000000){
-            echo "<script>alert('이미지 용량이 1메가를 초과했습니다.'); history.back(1)</script>";
-            exit;
-        }
+        
     
         // echo $sql;
     
