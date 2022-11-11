@@ -37,14 +37,14 @@
                         <button class="filter_btn" type="button" firstfilter="" data="">다육/선인장</button>
                     </ul>
                 </div> -->
-                <div class="first_filter_section" id="first_filter">
+                <!-- <div class="first_filter_section" id="first_filter">
                     <ul class="filter_lists">
                         <button class="filter_btn active" type="button" data-filter="all">all</button>
                         <button class="filter_btn" type="button" data-filter="초보자용">초보자용</button>
                         <button class="filter_btn" type="button" data-filter="다육/선인장">다육/선인장</button>
                         <button class="filter_btn" type="button" data-filter="반려동물 안전한">반려동물 안전한</button>
                     </ul>
-                </div>
+                </div> -->
             </section>
             <section class="search_search_section" id="passFilter">
                 <div class="search__search-form">
